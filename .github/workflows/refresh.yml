@@ -10,13 +10,13 @@ jobs:
     - name: "Checkout roar"
       uses: "actions/checkout@v6"
       with:
-        repository: "RobloxAPI/roar"
+        repository: "setup-rbxcdn2/roar"
         path: "roar"
 
     - name: "Checkout build-archive"
       uses: "actions/checkout@v6"
       with:
-        repository: "RobloxAPI/build-archive"
+        repository: "setup-rbxcdn2/build-archive"
         path: "build-archive"
 
     - name: "Checkout ref"
