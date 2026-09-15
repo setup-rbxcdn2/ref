@@ -24,7 +24,6 @@ jobs:
       with:
         ref: "gh-pages"
         path: "ref"
-        token: "${{ secrets.GITHUB_TOKEN }}"
 
     - name: "Setup Go"
       uses: "actions/setup-go@v6"
