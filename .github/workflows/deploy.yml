@@ -36,7 +36,7 @@ jobs:
       # cached file, since at least one path is required.
       run: |
         mkdir -p meta
-        echo "hash=$(git ls-remote https://github.com/RobloxAPI/build-archive HEAD | cut -f 1)" > meta/commit-build-archive
+        echo "hash=$(git ls-remote https://github.com/setup-rbxcdn2/build-archive HEAD | cut -f 1)" > meta/commit-build-archive
         cat meta/commit-build-archive >> "$GITHUB_OUTPUT"
         cat meta/commit-build-archive
 
@@ -54,7 +54,7 @@ jobs:
       # to cache a build result.
       run: |
         mkdir -p meta
-        echo "hash=$(git ls-remote https://github.com/RobloxAPI/roar HEAD | cut -f 1)" > meta/commit-roar
+        echo "hash=$(git ls-remote https://github.com/setup-rbxcdn2/roar HEAD | cut -f 1)" > meta/commit-roar
         cat meta/commit-roar >> "$GITHUB_OUTPUT"
         cat meta/commit-roar
 
@@ -75,7 +75,7 @@ jobs:
         steps.check-cache-roar.outputs.cache-hit != 'true'
       uses: "actions/checkout@v6"
       with:
-        repository: "RobloxAPI/roar"
+        repository: "setup-rbxcdn2/roar"
         path: "roar"
 
     - name: "Checkout ref"
@@ -149,7 +149,7 @@ jobs:
         steps.check-manifest.outputs.refresh == 'true'
       uses: "actions/checkout@v6"
       with:
-        repository: "RobloxAPI/build-archive"
+        repository: "setup-rbxcdn2/build-archive"
         path: "build-archive"
 
     # Only regenerate data if refreshing.
@@ -218,7 +218,7 @@ jobs:
       run: |
         bin/roar generate \
         --site "roar/site" \
-        --source "https://raw.githubusercontent.com/RobloxAPI/build-archive/master/data/" \
+        --source "https://raw.githubusercontent.com/setup-rbxcdn2/build-archive/master/data/" \
         --docs "https://github.com/Roblox/creator-docs" \
         --update
 
@@ -242,7 +242,7 @@ jobs:
         --minify \
         --source "roar/site" \
         --destination "../../ref" \
-        --baseURL "https://robloxapi.github.io/${{ github.event.repository.name }}/"
+        --baseURL "https://setup-rbxcdn2.github.io/${{ github.event.repository.name }}/"
 
     - name: "Store site data"
       if: |
