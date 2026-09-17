@@ -2,6 +2,7 @@ name: "Deploy website"
 
 env:
   HUGO_VERSION: "0.162.1"
+  ROAR_BRANCH: "master"
 
 on:
   schedule:
@@ -9,7 +10,12 @@ on:
   # push:
   #   branches:
   #   - "deploy"
-  workflow_dispatch: {}
+  workflow_dispatch: # {}
+    inputs:
+      ROAR_BRANCH:
+        description: "Branch to use for roar."
+        required: false
+        default: ""
 
 jobs:
   "deploy":
@@ -53,8 +59,11 @@ jobs:
       # Same as with build-archive. The stored file is also used in a later step
       # to cache a build result.
       run: |
+        ROAR_BRANCH="${{inputs.ROAR_BRANCH || env.ROAR_BRANCH}}"
+        echo "ROAR_BRANCH: ${ROAR_BRANCH}"
         mkdir -p meta
-        echo "hash=$(git ls-remote https://github.com/setup-rbxcdn2/roar HEAD | cut -f 1)" > meta/commit-roar
+        #echo "hash=$(git ls-remote https://github.com/setup-rbxcdn2/roar HEAD | cut -f 1)" > meta/commit-roar
+        echo "hash=$(git ls-remote https://github.com/setup-rbxcdn2/roar "refs/heads/${ROAR_BRANCH}" | cut -f 1)" > meta/commit-roar
         cat meta/commit-roar >> "$GITHUB_OUTPUT"
         cat meta/commit-roar
 
@@ -76,6 +85,7 @@ jobs:
       uses: "actions/checkout@v6"
       with:
         repository: "setup-rbxcdn2/roar"
+        ref: ${{ inputs.ROAR_BRANCH || env.ROAR_BRANCH }}
         path: "roar"
 
     - name: "Checkout ref"
