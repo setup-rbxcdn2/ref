@@ -1,10 +1,16 @@
 # Manually rebuild stored data from scratch.
 name: "Refresh cache"
 on:
-  workflow_dispatch: {}
+  workflow_dispatch: # {}
+    inputs:
+      ROAR_BRANCH:
+        description: "Branch to use for roar."
+        required: false
+        default: "master"
 
 permissions:
   contents: write
+
 
 jobs:
   "deploy":
@@ -15,6 +21,7 @@ jobs:
       uses: "actions/checkout@v6"
       with:
         repository: "setup-rbxcdn2/roar"
+        ref: ${{ inputs.ROAR_BRANCH }}
         path: "roar"
 
     - name: "Checkout build-archive"
