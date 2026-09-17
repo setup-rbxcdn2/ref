@@ -218,7 +218,7 @@ jobs:
       run: |
         bin/roar generate \
         --site "roar/site" \
-        --source "https://raw.githubusercontent.com/setup-rbxcdn2/build-archive/master/data/" \
+        --source "https://raw.githubusercontent.com/setup-rbxcdn2/build-archive/${{ steps.check-fetch-build-archive.outputs.hash }}/data/" \
         --docs "https://github.com/Roblox/creator-docs" \
         --update
 
