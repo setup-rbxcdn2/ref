@@ -2561,7 +2561,7 @@
 		},
 		"TriangleMeshPart": {
 			"Summary": "<p>Abstract intermediate class that manages physical geometry properties for\nPartOperations and MeshParts.</p>\n",
-			"Description": "<p>TriangleMeshPart is an abstract intermediate class from which <a href=\"/ref/class/MeshPart.html\">MeshPart</a>\nand <a href=\"/ref/class/PartOperation.html\">PartOperation</a> inherit. It was created to consolidate the\nmanagement of physical geometry properties between the two sub-classes. It\nimplements the read-only\n<a href=\"/ref/class/TriangleMeshPart.html#member-CollisionFidelity\">CollisionFidelity</a>.</p>\n"
+			"Description": "<p>TriangleMeshPart is an abstract intermediate class from which <a href=\"/ref/class/MeshPart.html\">MeshPart</a>\nand <a href=\"/ref/class/PartOperation.html\">PartOperation</a> inherit. It was created to consolidate the\nmanagement of physical geometry properties between the two sub-classes. It\nimplements the read-only\n<a href=\"/ref/class/TriangleMeshPart.html#member-CollisionFidelity\">CollisionFidelity</a> and\n<a href=\"/ref/class/TriangleMeshPart.html#member-CollisionPrecision\">CollisionPrecision</a>.</p>\n"
 		},
 		"TrussPart": {
 			"Summary": "<p>Similar to a <a href=\"/ref/class/Part.html\">Part</a> but with a different visual\n<a href=\"/ref/class/TrussPart.html#member-Style\">Style</a> and the important distinction that default\ncharacters are able to climb it.</p>\n",
@@ -17238,7 +17238,7 @@
 			},
 			"GetProfileConfigurationFromUserIdAsync": {
 				"Summary": "<p>Returns the profile configuration of a user as a dictionary.</p>\n",
-				"Description": "<p>Returns the profile configuration of the user specified by the given\n<a href=\"/ref/class/Player.html#member-UserId\">Player.UserId</a> as a dictionary. The dictionary can include a\n<code>backgroundAssetId</code> field for the user&#39;s profile background asset ID.</p>\n<p>Can only be called from the server and is throttled to a limited number of\nrequests per minute.</p>\n"
+				"Description": "<p>Returns the profile configuration of the user specified by the given\n<a href=\"/ref/class/Player.html#member-UserId\">Player.UserId</a> as a dictionary. The dictionary can include a\n<code>BackgroundAssetId</code> field for the user&#39;s profile background asset ID and a\n<code>FrameAssetId</code> field for the user&#39;s profile frame image asset ID.</p>\n<p>Can only be called from the server and is throttled to a limited number of\nrequests per minute.</p>\n"
 			},
 			"GetUserIdFromNameAsync": {
 				"Summary": "<p>Sends a query to the Roblox website for the <a href=\"/ref/class/Player.html#member-UserId\">userId</a>\nof an account with a given username.</p>\n",
@@ -23656,6 +23656,10 @@
 			"CollisionFidelity": {
 				"Summary": "<p>Determines the level of detail the part&#39;s physics will adhere to its mesh.</p>\n",
 				"Description": "<p>This property determines how the collision model of the\n<a href=\"/ref/class/TriangleMeshPart.html\">TriangleMeshPart</a> relates to the actual geometry of the mesh. This\nproperty cannot be read or manipulated by scripts during runtime.</p>\n<p>See <a href=\"https://create.roblox.com/docs/workspace/collisions#collision-fidelity\">here</a> for a\nvisual representation of the various options.</p>\n"
+			},
+			"CollisionPrecision": {
+				"Summary": "<p>Quantifies how precise or performant a <a href=\"/ref/enum/CollisionFidelity.html\">CollisionFidelity.Tunable</a>\ncollision geometry is, from <code>0</code> to <code>1</code>.</p>\n",
+				"Description": "<p>This property describes the precision-to-performance tradeoff of the\npart&#39;s collision geometry when <a href=\"/ref/class/TriangleMeshPart.html#member-CollisionFidelity\">TriangleMeshPart.CollisionFidelity</a>\nis set to <a href=\"/ref/enum/CollisionFidelity.html\">CollisionFidelity.Tunable</a>. A value of <code>0</code> favors maximum\nperformance with the simplest collision mesh, while a value of <code>1</code> favors\nmaximum precision with a collision mesh that closely matches the visual\nmesh.</p>\n"
 			},
 			"FluidFidelity": {
 				"Summary": "<p>Determines the geometric representation used to compute aerodynamic forces\nand torques.</p>\n",
@@ -32235,7 +32239,7 @@
 		},
 		"ImageCombineType": {
 			"Add": {
-				"Summary": "<p>Adds pixels from the source and pixels from the destination together.</p>\n"
+				"Summary": "<p>Adds pixels from the source and pixels from the destination together.\nSource RGB values are scaled by the source alpha, while source alpha is\nadded directly to destination alpha.</p>\n"
 			},
 			"AlphaBlend": {
 				"Summary": "<p>Blends pixels from the source with pixels from the destination based on\nthe alpha of the source pixels. Unlike <strong>BlendSourceOver</strong>, the\ndestination color in <strong>AlphaBlend</strong> affects the resulting color of the\nimage, regardless of the destination color&#39;s alpha.</p>\n"
@@ -32253,7 +32257,7 @@
 				"Summary": "<p>Overwrites all pixels in the destination image with pixels from the source\nimage.</p>\n"
 			},
 			"Subtract": {
-				"Summary": "<p>Subtracts pixels of the source from pixels of the destination.</p>\n"
+				"Summary": "<p>Subtracts pixels of the source from pixels of the destination. Source RGB\nvalues are scaled by the source alpha, while source alpha is subtracted\ndirectly from destination alpha.</p>\n"
 			}
 		},
 		"InOut": {
