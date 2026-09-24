@@ -59,12 +59,141 @@ v0.739.0.7390687
 version-55808de4b1914919">739</a></td><td class=col-icon><span class=picture title=EnumItem data-type=EnumItem><span class=icon style="--light:url('/ref/icons/light/EnumMember_hu_2115fccc4405b9cc.png');--dark:url('/ref/icons/light/EnumMember_hu_b10d92424bb001ea.png')"></span></span></td><td class=col-name><a class="entity-link deco" href=/ref/enum/AnimationNodeType.html#member-OneShotNode>OneShotNode</a></td><td class=col-value><span>14</span></td><td class=col-desc><p>A layering node that plays a one-shot pose over a looping base pose on
 trigger, blending it in and back out.</p></td></tr><tr id=member-StateMachineNode class=set><td class=col-history><a class="history-tag added" href=/ref/updates/2026.html#version-55808de4b1914919-40 title="Added on 2026-09-14T16:21:59-07:00
 v0.739.0.7390687
-version-55808de4b1914919">739</a></td><td class=col-icon><span class=picture title=EnumItem data-type=EnumItem><span class=icon style="--light:url('/ref/icons/light/EnumMember_hu_2115fccc4405b9cc.png');--dark:url('/ref/icons/light/EnumMember_hu_b10d92424bb001ea.png')"></span></span></td><td class=col-name><a class="entity-link deco" href=/ref/enum/AnimationNodeType.html#member-StateMachineNode>StateMachineNode</a></td><td class=col-value><span>16</span></td><td class=col-desc><span class=no-desc></span></td></tr></tbody></table></section><section id=removed-members-index class="set removed"><header><h2>Removed items <span class=element-count>1</span></h2></header><table class="index-card enumitems"><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-name>Name</th><th class=col-value>Value</th></tr></thead><tbody><tr id=member-BlendNode class="set removed"><td class=col-history><a class="history-tag removed" href=/ref/updates/2026.html#version-913142fd943640d2-42 title="Removed on 2026-03-17T09:15:12-07:00
+version-55808de4b1914919">739</a></td><td class=col-icon><span class=picture title=EnumItem data-type=EnumItem><span class=icon style="--light:url('/ref/icons/light/EnumMember_hu_2115fccc4405b9cc.png');--dark:url('/ref/icons/light/EnumMember_hu_b10d92424bb001ea.png')"></span></span></td><td class=col-name><a class="entity-link deco" href=/ref/enum/AnimationNodeType.html#member-StateMachineNode>StateMachineNode</a></td><td class=col-value><span>16</span></td><td class=col-desc><p>A node that selects and transitions between animation states according to
+a state machine definition.</p></td></tr></tbody></table></section><section id=removed-members-index class="set removed"><header><h2>Removed items <span class=element-count>1</span></h2></header><table class="index-card enumitems"><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-name>Name</th><th class=col-value>Value</th></tr></thead><tbody><tr id=member-BlendNode class="set removed"><td class=col-history><a class="history-tag removed" href=/ref/updates/2026.html#version-913142fd943640d2-42 title="Removed on 2026-03-17T09:15:12-07:00
 v0.713.0.7130910
 version-913142fd943640d2">713</a></td><td class=col-icon><span class=picture title=EnumItem data-type=EnumItem><span class=icon style="--light:url('/ref/icons/light/EnumMember_hu_2115fccc4405b9cc.png');--dark:url('/ref/icons/light/EnumMember_hu_b10d92424bb001ea.png')"></span></span></td><td class=col-name><a class="entity-link deco removed" href=/ref/enum/AnimationNodeType.html#member-BlendNode>BlendNode</a></td><td class=col-value><span>2</span></td></tr></tbody></table></section><section id=description><header><h2>Description</h2></header><div class=docs><p>Used by <a href=/ref/class/AnimationNodeDefinition.html#member-NodeType>AnimationNodeDefinition.NodeType</a> to define how a node in an
 animation graph processes animation. Setting a node's type resets its input
-pins to the default set for that type. See individual items for clip, blend,
-layer, sequence, mask, and speed behaviors.</p></div></section><section id=history class="filter-container history-member-filter"><header><h2>History <span class=element-count>20</span><aside class=filter-controls><label><input class=filter-input type=checkbox>
+pins to the default set for that type.</p><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.ClipNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Clip-Node.png width=30% alt="Clip node"><p>A reference to an <a href=/ref/class/AnimationClip.html>AnimationClip</a> asset. This serves as a leaf node in
+the graph, generating the raw animation data that feeds into other nodes for
+blending, selection, or modification.</p><h4>Inputs</h4><ul><li>None</li></ul><h4>Properties</h4><ul><li><strong>AnimationId</strong> (String): The animation asset to play (for example,
+<code>rbxassetid://12345</code>).</li><li><strong>PlayMode</strong> (<code>AnimationNodePlayMode</code>): Defines the behavior of the clip
+once it reaches the end of its duration.<ul><li><strong>Loop (default)</strong>: Automatically restarts from the beginning once the
+clip finishes.</li><li><strong>PingPong</strong>: Plays from start to end, then immediately plays in reverse
+from end to start.</li><li><strong>OnceAndHold</strong>: Plays once and maintains the final pose upon completion.</li><li><strong>OnceAndReset</strong>: Plays once and snaps back to the initial start pose upon
+completion.</li></ul></li><li><strong>Reverse</strong> (Boolean): Controls the direction of playback.</li><li><strong>Speed</strong> (Number): A multiplier for the playback rate. <code>0.0</code> pauses the
+graph, <code>1.0</code> is normal speed, and <code>2.0</code> is double speed.</li><li><strong>Trim</strong> (Boolean): Toggles whether the clip's duration should be truncated.</li><li><strong>TrimStart</strong> (Number): The absolute timestamp (in seconds) where playback
+should begin.</li><li><strong>TrimEnd</strong> (Number): The absolute timestamp (in seconds) where playback
+should terminate.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> None. This is a leaf node with no children.</li><li><strong>Event Emission:</strong> Reads custom markers embedded in the animation clip
+(e.g., "Footstep", "WeaponSwing") and emits them as named events at the
+precise frame they occur. If the clip is trimmed, only markers within the
+defined <code>[TrimStart, TrimEnd]</code> interval (inclusive) are emitted.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.SelectNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Select-Node.png width=30% alt="Select node"><p>Selects between any number of inputs via the Selection property. Whenever the
+current selection changes, it triggers a new
+<a href=https://create.roblox.com/docs/animation/graph-editor#transitions>transition</a>.</p><h4>Inputs</h4><ul><li><strong>Input1...InputN</strong></li></ul><h4>Properties</h4><ul><li><strong>Selection</strong> (String): The unique ID of the input to select, matching the
+input connection name (for example, "Walk").</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> Events from the currently selected input pass through
+with their weight unchanged.</li><li><strong>Event Emission:</strong> Passes through all events from the currently selected
+input only. During a transition, event emission follows
+<a href=https://create.roblox.com/docs/animation/graph-editor#global-event-rules>global event rules</a>.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.PrioritySelectNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Priority-Select-Node.png width=30% alt="Priority Select node"><p>Evaluates a list of connected inputs from top to bottom and plays the first
+one whose condition evaluates to true. This allows for hierarchical animation
+selection based on specific logic. Whenever the current selection changes, it
+triggers a new <a href=https://create.roblox.com/docs/animation/graph-editor#transitions>transition</a>.</p><h4>Inputs</h4><ul><li><strong>Input1...InputN</strong><ul><li><strong>Trigger</strong> (Boolean): A logical condition that must be true for this
+input to activate. This is wired to a boolean parameter.</li><li><strong>TransitionOverrideInterruptible</strong> (<code>AnimationNodeInterruptible</code>):
+Defines the rule for when this active animation can be interrupted by a
+higher-priority input. Overrides the node-level <strong>DefaultInterruptible</strong>
+setting.<ul><li><strong>Always (default)</strong>: The input can be interrupted at any time by a
+higher-priority condition.</li><li><strong>Finished</strong>: The current animation must complete its playback before a
+higher-priority input can take over.</li><li><strong>Trigger</strong>: The input is only interruptible when the
+<code>InterruptibleTrigger</code> is set to true.</li></ul></li><li><strong>InterruptibleTrigger</strong> (Boolean): Only available if
+<strong>TransitionOverrideInterruptible</strong> is set to <strong>Trigger</strong>. The input can
+be interrupted when this specific expression is true.</li></ul></li></ul><h4>Properties</h4><ul><li><strong>DefaultInterruptible</strong> (<code>AnimationNodeInterruptible</code>): The baseline
+interruption rule applied to all inputs. Each input can override this with
+its <strong>TransitionOverrideInterruptible</strong> input property.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> Events from the currently selected input pass through
+with their weight unchanged.</li><li><strong>Event Emission:</strong> Passes through all events from the currently selected
+input only. During a transition, event emission follows
+<a href=https://create.roblox.com/docs/animation/graph-editor#global-event-rules>global event rules</a>.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.SequenceNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Sequence-Node.png width=30% alt="Sequence node"><p>Activates connected inputs in a specific sequential order based on defined
+wait conditions. Whenever the current selection changes, it triggers a new
+<a href=https://create.roblox.com/docs/animation/graph-editor#transitions>transition</a>.</p><h4>Inputs</h4><ul><li><strong>Input1...InputN</strong><ul><li><strong>TransitionOverrideWaitFor</strong> (<code>AnimationNodeWaitFor</code>): Specifies the
+condition that must be met before the sequence advances to the next input.
+Overrides the node-level <strong>DefaultWaitFor</strong> setting.<ul><li><strong>Finished (default)</strong>: Advances to the next input when the current
+input completes a cycle. The advancement behavior depends on the
+connected input:<ul><li><strong>Play-once clip</strong>: Advances when the clip finishes.</li><li><strong>Looping clip</strong>: Advances after one full loop completes.</li><li><strong>Sequence with infinite loops</strong>: Advances after one full cycle
+through all inputs.</li><li><strong>Sequence with finite loops</strong>: Advances after all loops complete.</li></ul></li><li><strong>Trigger</strong>: Activates the next input when a custom logical expression
+evaluates to true.</li></ul></li><li><strong>WaitForTrigger</strong> (Boolean): Only available when
+<code>TransitionOverrideWaitFor</code> is set to <code>Trigger</code>.</li></ul></li></ul><h4>Properties</h4><ul><li><strong>LoopCount</strong> (Number): The number of times to cycle through the entire
+sequence. A value of <code>0</code> (default) indicates an infinite loop. Once reached,
+the node respects the looping or hold setting of the final input.</li><li><strong>DefaultWaitFor</strong> (<code>AnimationNodeWaitFor</code>): The baseline wait condition
+applied to all inputs. Each input can override this with its
+<strong>TransitionOverrideWaitFor</strong> input property.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> Events from the currently active input pass through with
+their weight unchanged.</li><li><strong>Event Emission:</strong> Passes through all events from the currently active
+input in the sequence only. During a transition, event emission follows
+<a href=https://create.roblox.com/docs/animation/graph-editor#global-event-rules>global event rules</a>.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.RandomSequenceNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Random-Sequence-Node.png width=30% alt="Random Sequence node"><p>Selects and plays one of its connected inputs at random. When the currently
+selected animation completes, the node randomly picks another input to play.
+Assign each input a specific weight to influence the probability of it being
+chosen. Whenever the current selection changes, it triggers a new
+<a href=https://create.roblox.com/docs/animation/graph-editor#transitions>transition</a>.</p><h4>Inputs</h4><ul><li><strong>Input1...InputN</strong><ul><li><strong>Weight</strong> (Number): Determines the probability of this input being
+selected; higher weights increase the chance of selection.</li></ul></li></ul><h4>Properties</h4><ul><li><strong>PlayCount</strong> (Number): The number of inputs the node plays before stopping.
+Once reached, the node respects the looping or hold setting of the final
+input. Defaults to <code>0</code>, which repeats indefinitely.</li><li><strong>Seed</strong> (Number): A value used to initialize the random number generator,
+ensuring the sequence remains consistent across clients. Defaults to <code>-1</code>,
+which uses a random seed.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> Events from the currently active input pass through with
+their weight unchanged.</li><li><strong>Event Emission:</strong> Passes through all events from the currently active
+input in the sequence only. During a transition, event emission follows
+<a href=https://create.roblox.com/docs/animation/graph-editor#global-event-rules>global event rules</a>.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.OverNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Over-Node.png width=30% alt="Over node"><p>Layers the <strong>Over</strong> pose on top of the Base pose. When combined with a Mask
+node, masked-out joints in the <strong>Over</strong> pose reveal the <strong>Base</strong> pose
+entirely, creating a transparent overlay effect.</p><h4>Inputs</h4><ul><li><strong>Base</strong>: The background or bottom layer, typically a full-body animation
+like locomotion or an idle state.</li><li><strong>Over</strong>: The foreground or top layer to be applied over the base, such as a
+hand gesture or tool-use animation.</li></ul><h4>Properties</h4><ul><li><strong>Weight</strong> (Number): The blend weight used to attenuate the <strong>Over</strong> pose.
+Defaults to <code>1.0</code> (full override) and is unclamped.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong><ul><li>The node listens for events from both the <strong>Base</strong> and <strong>Over</strong> inputs.</li></ul></li><li><strong>Event Emission:</strong><ul><li><strong>Base Events</strong>: All events from the Base input are passed through
+unmodified.</li><li><strong>Over Events</strong>: Events from the Over input are scaled by the Weight
+property.<ul><li>At Weight <code>0.5</code>, <strong>Over</strong> events propagate at half weight</li><li>At Weight <code>0</code>, they are silenced.</li></ul></li></ul></li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.AddNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Add-Node.png width=30% alt="Add node"><p>Adds the <strong>Additive</strong> pose to the <strong>Base</strong> pose, attenuated by a specific
+<strong>Weight</strong> (unclamped).</p><h4>Inputs</h4><ul><li><strong>Base</strong>: The primary animation pose.</li><li><strong>Additive</strong>: The pose to be layered onto the base.</li></ul><h4>Properties</h4><ul><li><strong>Weight</strong> (Number): Determines the strength of the additive pose applied to
+the base.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> The node listens for events from both the <strong>Base</strong> and
+<strong>Additive</strong> inputs.</li><li><strong>Event Emission:</strong> All events from both the Base and Additive inputs are
+passed through unmodified.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.SubtractNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Subtract-Node.png width=30% alt="Subtract node"><p>Converts an animation into an additive pose by subtracting a relative base
+pose from the target pose ($A - ext{Weight} imes B$). The <strong>Weight</strong>
+scales the <strong>B</strong> pose before subtraction (unclamped).</p><h4>Inputs</h4><ul><li><strong>A</strong>: The target animation pose.</li><li><strong>B</strong>: The relative base pose to be subtracted.</li></ul><h4>Properties</h4><ul><li><strong>Weight</strong> (Number): Scales the <strong>B</strong> pose before it is subtracted from
+<strong>A</strong>. At <code>1.0</code> (default), <strong>B</strong> is fully subtracted; at <code>0.0</code>, no
+subtraction occurs.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> The node listens for events from both <strong>Input A</strong> and
+<strong>Input B</strong>.</li><li><strong>Event Emission:</strong> All events from both <strong>Input A</strong> and <strong>Input B</strong> are
+passed through unmodified.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.Blend1DNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Blend1D-Node.png width=30% alt="Blend1D node"><p>Linearly interpolates between the two animation poses closest to the current
+input position on a single axis.</p><h4>Inputs</h4><ul><li><strong>Input1...InputN</strong><ul><li><strong>Position</strong> (Number): The specific coordinate for each subsequent input
+on the blend axis.</li></ul></li></ul><h4>Properties</h4><ul><li><strong>Position</strong> (Number): The current active value on the blend axis used to
+sample the animations. If <strong>Position</strong> is outside the range of defined input
+positions, the node extrapolates using the two nearest inputs.</li><li><strong>PhaseSync</strong> (<code>AnimationNodePhaseSync</code>): Configures whether the timing of
+child inputs should synchronize.<ul><li><strong>Synced (default)</strong>: Uses normalized synchronization. The node calculates
+a "virtual duration" from the weighted average of active inputs. Each
+input node's time step adjusts so all children converge on the same phase,
+keeping animations of different lengths in lockstep.</li><li><strong>Unsynced</strong>: Clips advance independently at their own playback rates.</li></ul></li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> The node listens for events from all currently active
+child nodes.</li><li><strong>Event Emission:</strong> Only events from the highest-weight active input
+propagate, scaled by its blend weight. Events from the secondary input are
+silenced.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.Blend2DNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Blend2D-Node.png width=30% alt="Blend2D node"><p>Blends multiple animation poses together based on two input parameters within
+a 2D coordinate space. This generalizes the Blend1D node to handle complex
+scenarios, such as blending based on both movement direction and speed
+simultaneously.</p><h4>Inputs</h4><ul><li><strong>Input1...InputN</strong><ul><li><strong>X</strong> (Number): The X-coordinate for each subsequent input.</li><li><strong>Y</strong> (Number): The Y-coordinate for each subsequent input.</li></ul></li></ul><h4>Properties</h4><ul><li><strong>InputMode</strong> (<code>AnimationNodeBlend2DInputMode</code>): Defines the coordinate
+system used to evaluate the blendspace.<ul><li><strong>Cartesian (default)</strong>: Uses standard 2D grid coordinates. X and Y
+represent the current position within the blendspace.</li><li><strong>Polar</strong>: Uses angular and magnitude values. X represents direction in
+radians, while Y represents movement magnitude or strength. Direction is
+weighted more heavily, so inputs at similar angles but different
+magnitudes blend more smoothly than inputs at different angles.</li></ul></li><li><strong>X</strong> (Number): The current X-coordinate in Cartesian mode or direction in
+radians in Polar mode.</li><li><strong>Y</strong> (Number): The current Y-coordinate in Cartesian mode or magnitude in
+Polar mode.</li><li><strong>PhaseSync</strong> (<code>AnimationNodePhaseSync</code>): Configures whether the timing of
+child inputs should synchronize.<ul><li><strong>Synced (default)</strong>: Uses normalized synchronization. The node calculates
+a "virtual duration" from the weighted average of active inputs. Each
+input node's time step adjusts so all children converge on the same phase,
+keeping animations of different lengths in lockstep.</li><li><strong>Unsynced</strong>: Clips advance independently at their own playback rates.</li></ul></li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> The node listens for events from all currently active
+child nodes.</li><li><strong>Event Emission:</strong> Only events from the highest-weight active input
+propagate, scaled by its blend weight. Events from the secondary input are
+silenced.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.MaskNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Mask-Node.png width=30% alt="Mask node"><p>Applies a predefined mask to the input Pose. A mask is defined by a weight per
+object (e.g. joint) in the rig hierarchy, allowing for precise control or
+"feathering" of the animation.</p><h4>Inputs</h4><ul><li><strong>Pose</strong>: The animation pose to be masked.</li></ul><h4>Properties</h4><ul><li><strong>Mask</strong> (<a href=/ref/class/ObjectValue.html>ObjectValue</a>): A direct child of the Mask
+<code>AnimationNodeDefinition</code> that defines mask weights.<ul><li><strong>Directly</strong>: The <a href=/ref/class/ObjectValue.html>ObjectValue</a> contains attributes that map rig
+object names to weight values.</li><li><strong>By Reference</strong>: The <a href=/ref/class/ObjectValue.html>ObjectValue</a> references another
+<a href=/ref/class/Instance.html>Instance</a> with the mapping attributes, enabling shared masks across
+graph nodes.</li><li>Choose a rig schema (<a href=/ref/class/HumanoidRigDescription.html>HumanoidRigDescription</a> or <strong>Picker</strong>) to
+populate the hierarchy.<ul><li><a href=/ref/class/HumanoidRigDescription.html>HumanoidRigDescription</a>: Standardizes the mask for humanoid
+characters.</li><li><strong>Picker</strong>: Lets you select any rig in the workspace to populate the
+mask hierarchy.</li></ul></li></ul></li><li><strong>Invert</strong> (Boolean): When true, applies each weight as <code>1 - weight</code>,
+allowing the mask to be reused inversely without creating a new asset.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> The node listens for all events from the input <strong>Pose</strong>.</li><li><strong>Event Emission:</strong> All events from the input <strong>Pose</strong> are passed through
+unmodified.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.SpeedNode</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Speed-Node.png width=30% alt="Speed node"><p>Modifies the playback rate of an incoming animation pose.</p><h4>Inputs</h4><ul><li><strong>Pose</strong>: The animation pose or subgraph whose playback speed will be
+modified.</li></ul><h4>Properties</h4><ul><li><strong>Speed</strong> (Number): A multiplier applied to the time delta ($dt$). <code>0.0</code>
+pauses the graph, <code>1.0</code> is normal speed, and <code>2.0</code> is double speed.</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> The node listens for events from the input <strong>Pose</strong>.</li><li><strong>Event Emission:</strong> All events from the input <strong>Pose</strong> are passed through
+unmodified. Note that while the visual playback speed changes, the timing of
+emitted events (such as markers) will scale accordingly with the modified
+playback rate.</li></ul><h3><a href=/ref/enum/AnimationNodeType.html>AnimationNodeType.GraphOutput</a></h3><img src=https://prod.docsiteassets.roblox.com/assets/animation/graph-editor/Graph-Output-Node.png width=30% alt="GraphOutput node"><p>Represents the final evaluated pose of the graph. This node is automatically
+included in all new graphs in the Animation Graph Editor. Its presence ensures
+that the graph is always valid and consistently produces an animation pose.</p><h4>Inputs</h4><ul><li><strong>Pose</strong>: The final processed animation data to be applied to the rig.</li></ul><h4>Properties</h4><ul><li>None</li></ul><h4>Event data</h4><ul><li><strong>Event Handling:</strong> The node listens for all events passed through the final
+connected input.</li><li><strong>Event Emission:</strong> This node serves as the exit point for the animation
+pipeline and does not emit signals back into the graph.</li></ul></div></section><section id=history class="filter-container history-member-filter"><header><h2>History <span class=element-count>20</span><aside class=filter-controls><label><input class=filter-input type=checkbox>
 <span>Hide item changes</span></label></aside></h2></header><ul class="change-list truncated-list"><li class=filter-element data-entity=EnumItem><a class="history-tag added" href=/ref/updates/2026.html#version-55808de4b1914919-40 title="Added on 2026-09-14T16:21:59-07:00
 v0.739.0.7390687
 version-55808de4b1914919">739</a>
