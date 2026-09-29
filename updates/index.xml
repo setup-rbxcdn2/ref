@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn2.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn2.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.740.0.7400927</title><link>https://setup-rbxcdn2.github.io/ref/updates/2026.html#version-3afcc74cf8b04b5d</link><description>33 revisions to the API.</description><guid>version-3afcc74cf8b04b5d</guid><pubDate>Mon, 21 Sep 2026 17:44:05 -0700</pubDate><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Roblox API Reference</title><link>https://setup-rbxcdn2.github.io/ref/updates/index.html</link><description>Updates to Roblox engine API.</description><language>en-us</language><atom:link href="https://setup-rbxcdn2.github.io/ref/updates/index.xml" rel="self" type="application/rss+xml"/><item><title>v0.741.19.7411056</title><link>https://setup-rbxcdn2.github.io/ref/updates/2026.html#version-76e1a02649ad4f35</link><description>130 revisions to the API.</description><guid>version-76e1a02649ad4f35</guid><pubDate>Mon, 28 Sep 2026 17:25:12 -0700</pubDate><content:encoded><![CDATA[
+				<ul>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-0">Add Function AnimationClipProvider.GetAnimationValueNodeDefinition</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-1">Add Function AnimationClipProvider.GetAnimationValueNodeTypes</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-2">Change Function AssetImportService.UploadAssetFromPathAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-3">Add Function AssetService.CreateTextContentAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-4">Add Function AssetService.ReadTextContentAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-5">Add Property AudioSpeechToText.Locale</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-6">Add Function AvatarClothingRules.WillLimitLayeredAccessoryAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-7">Add Class BackendReplicatedStorage</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-8">Add Class BackendServerScriptService</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-9">Add Class BackendServerStorage</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-10">Change Property Decal.LocalizedTextureContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-12">Add Function ExperienceService.ConsumePendingExperienceLeaveWithReason</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-13">Add Function ExperienceService.LeaveExperienceWithReason</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-14">Add Class FriendsCallingInstance</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-22">Add Class FriendsCallingParticipant</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-30">Add Function HeightmapImporterService.ImportHeightmapWithMaterialSlotsAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-31">Change Property ImageButton.LocalizedImageContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-34">Change Property ImageLabel.LocalizedImageContent</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-37">Add Event MarketplaceService.PromptBulkPurchaseRequestedV3</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-38">Add Function NotificationService.SubscribeToTopic</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-39">Add Function NotificationService.UnsubscribeFromTopic</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-40">Add Event NotificationService.TopicNotificationReceived</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-41">Add Function Player.GetFriendsInServerAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-42">Add Class ProjectService</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-66">Add Function RunService.GetRobloxClientIxpEnrolledExperiments</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-67">Add Function ScriptEditorService.OpenStringValueDocumentAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-68">Remove Property StarterPlayer.GameSettingsAssetIDFace</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-69">Remove Property StarterPlayer.GameSettingsAssetIDHead</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-70">Remove Property StarterPlayer.GameSettingsAssetIDLeftArm</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-71">Remove Property StarterPlayer.GameSettingsAssetIDLeftLeg</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-72">Remove Property StarterPlayer.GameSettingsAssetIDPants</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-73">Remove Property StarterPlayer.GameSettingsAssetIDRightArm</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-74">Remove Property StarterPlayer.GameSettingsAssetIDRightLeg</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-75">Remove Property StarterPlayer.GameSettingsAssetIDShirt</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-76">Remove Property StarterPlayer.GameSettingsAssetIDTeeShirt</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-77">Remove Property StarterPlayer.GameSettingsAssetIDTorso</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-78">Remove Property StarterPlayer.GameSettingsScaleRangeBodyType</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-79">Remove Property StarterPlayer.GameSettingsScaleRangeHead</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-80">Remove Property StarterPlayer.GameSettingsScaleRangeHeight</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-81">Remove Property StarterPlayer.GameSettingsScaleRangeProportion</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-82">Remove Property StarterPlayer.GameSettingsScaleRangeWidth</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-83">Add Function StudioAssetService.UploadAndInsertAssetForJobAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-84">Add Function StudioCaptureService.CapturePluginGuiByPluginGuiIdAsync</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-85">Add Function Terrain.IsMaterialSlotInvalid</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-86">Add Property TestService.Enabled</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-87">Add Property TextChatMessage.IsHistorical</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-88">Add Class TextDocument</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-90">Add Function VoiceChatService.lastVoiceChatConnectivity</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-91">Add Enum FriendsCallingEndReason</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-99">Add Enum FriendsCallingParticipantErrors</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-105">Add Enum FriendsCallingParticipantLeaveReason</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-113">Add Enum FriendsCallingParticipantStatus</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-123">Add Enum FriendsCallingPhase</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-128">Add EnumItem GradientType.Elliptical</a></li>
+					<li><a href="/ref/updates/2026.html#version-76e1a02649ad4f35-129">Add Enum ProjectServiceOperationResult</a></li>
+				</ul>
+				<a href="/ref/updates/2026.html#version-76e1a02649ad4f35">All changes</a>
+			]]></content:encoded></item><item><title>v0.740.0.7400927</title><link>https://setup-rbxcdn2.github.io/ref/updates/2026.html#version-3afcc74cf8b04b5d</link><description>33 revisions to the API.</description><guid>version-3afcc74cf8b04b5d</guid><pubDate>Mon, 21 Sep 2026 17:44:05 -0700</pubDate><content:encoded><![CDATA[
 				<ul>
 					<li><a href="/ref/updates/2026.html#version-3afcc74cf8b04b5d-0">Add Function AssetQualityService.FetchAssetQualitySummaryFromJobIdV2Async</a></li>
 					<li><a href="/ref/updates/2026.html#version-3afcc74cf8b04b5d-1">Add Property AudioTextToSpeech.AutoLocalize</a></li>
@@ -4880,57 +4939,4 @@
 					<li><a href="/ref/updates/2025.html#version-2c10da33724f4ef9-148">Add EnumItem TeamCreateErrorState.PlaceUploadFailing</a></li>
 				</ul>
 				<a href="/ref/updates/2025.html#version-2c10da33724f4ef9">All changes</a>
-			]]></content:encoded></item><item><title>v0.692.0.6920844</title><link>https://setup-rbxcdn2.github.io/ref/updates/2025.html#version-82e3166df8694a7e</link><description>58 revisions to the API.</description><guid>version-82e3166df8694a7e</guid><pubDate>Tue, 23 Sep 2025 15:02:53 -0700</pubDate><content:encoded><![CDATA[
-				<ul>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-0">Add Function AdService.ShowRewardedVideoAdAtClientAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-1">Add Function AdService.SubmitAdNotification</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-2">Add Function AvatarCreationService.PromptCreateAvatarAssetAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-3">Add Event AvatarCreationService.AvatarAssetModerationCompleted</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-4">Add Function ContentProvider.GetDetailedFailedRequests</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-5">Add Function GeometryService.TranscodeMesh</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-6">Add Event HapticEffect.Ended</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-7">Add Function HttpService.JSONDecodeAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-8">Add Function HttpService.JSONEncodeAsync</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-9">Add Property MaterialVariant.EmissiveMaskContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-10">Add Property MaterialVariant.EmissiveStrength</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-11">Add Property MaterialVariant.EmissiveTint</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-12">Remove Property MeshPart.EditableMeshString</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-13">Add Property ParticleEmitter.FlipbookSizeX</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-14">Add Property ParticleEmitter.FlipbookSizeY</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-15">Add Property SurfaceAppearance.EmissiveMaskContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-16">Add Property SurfaceAppearance.EmissiveStrength</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-17">Add Property SurfaceAppearance.EmissiveTint</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-18">Add Property TerrainDetail.EmissiveMaskContent</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-19">Add Property TerrainDetail.EmissiveStrength</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-20">Add Property TerrainDetail.EmissiveTint</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-21">Add Function TextChatService.SendExpChatWindowStatusChange</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-22">Change Function VoiceChatService.leaveVoice</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-23">Change EnumItem AssetType.DressSkirtAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-24">Change EnumItem AssetType.DynamicHead</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-25">Change EnumItem AssetType.EarAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-26">Change EnumItem AssetType.EmoteAnimation</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-27">Change EnumItem AssetType.EyeAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-28">Change EnumItem AssetType.EyebrowAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-29">Change EnumItem AssetType.EyelashAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-30">Change EnumItem AssetType.FontFamily</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-31">Change EnumItem AssetType.JacketAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-32">Change EnumItem AssetType.LeftShoeAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-33">Change EnumItem AssetType.MoodAnimation</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-34">Change EnumItem AssetType.PantsAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-35">Change EnumItem AssetType.RightShoeAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-36">Change EnumItem AssetType.ShirtAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-37">Change EnumItem AssetType.ShortsAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-38">Change EnumItem AssetType.SweaterAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-39">Change EnumItem AssetType.TShirtAccessory</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-40">Change EnumItem AssetType.Video</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-41">Add EnumItem ParticleFlipbookLayout.Custom</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-42">Remove EnumItem PredictionMode.Auto</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-43">Add EnumItem PredictionMode.Automatic</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-44">Add EnumItem PromptCreateAssetResult.ModeratedName</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-45">Add EnumItem PromptCreateAssetResult.PurchaseFailure</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-46">Add EnumItem PromptCreateAssetResult.TokenInvalid</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-47">Add EnumItem PromptCreateAssetResult.UGCValidationFailed</a></li>
-					<li><a href="/ref/updates/2025.html#version-82e3166df8694a7e-48">Add Enum VoiceClientLeaveReasons</a></li>
-				</ul>
-				<a href="/ref/updates/2025.html#version-82e3166df8694a7e">All changes</a>
 			]]></content:encoded></item></channel></rss>
