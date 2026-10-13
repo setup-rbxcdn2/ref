@@ -5285,7 +5285,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "CreateTrack",
+					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -5298,7 +5298,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "CreateTrack",
+					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -5311,7 +5311,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "CreateTrack",
+					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -5324,46 +5324,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "CreateTrack",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Class",
-						"Name": "AnimatedImageTrack"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "DestroyTrack",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "DestroyTrack",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "DestroyTrack",
+					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -5376,7 +5337,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "GetFrameNames",
+					"Member": "GetAnimatedImageClipFramesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -5389,7 +5350,20 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "GetFrameNames",
+					"Member": "GetAnimatedImageClipFramesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetAnimatedImageClipFramesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -5402,7 +5376,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "GetTrack",
+					"Member": "GetAnimatedImageClipsChangedSignal",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -5415,46 +5389,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "GetTrack",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetTrack",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Class",
-						"Name": "AnimatedImageTrack"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetTracksChanged",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetTracksChanged",
+					"Member": "GetAnimatedImageClipsChangedSignal",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -5467,9 +5402,191 @@
 				},
 				{
 					"Class": "AnimatedImageService",
+					"Member": "CreateTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "CreateTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "CreateTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "CreateTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AnimatedImageTrack"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "DestroyTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "DestroyTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "DestroyTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AnimatedImageTrack"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTracksChanged",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTracksChanged",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
 					"Member": "Prewarm",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -5482,7 +5599,7 @@
 					"Class": "AnimatedImageService",
 					"Member": "Prewarm",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -5495,7 +5612,7 @@
 					"Class": "AnimatedImageService",
 					"Member": "UnloadTracks",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -5508,7 +5625,7 @@
 					"Class": "AnimatedImageService",
 					"Member": "UnloadTracks",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -5521,7 +5638,7 @@
 		},
 		"AnimatedImageTrack": {
 			"Name": "AnimatedImageTrack",
-			"Removed": false,
+			"Removed": true,
 			"HasRemoved": false,
 			"Subclasses": [],
 			"Superclasses": [
@@ -5533,7 +5650,7 @@
 					"Class": "AnimatedImageService",
 					"Member": "CreateTrack",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -5546,7 +5663,7 @@
 					"Class": "AnimatedImageService",
 					"Member": "GetTrack",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -5559,7 +5676,7 @@
 					"Class": "AnimatedImageTrack",
 					"Member": "Duration",
 					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -5572,7 +5689,7 @@
 					"Class": "AnimatedImageTrack",
 					"Member": "FrameCount",
 					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -5585,7 +5702,7 @@
 					"Class": "AnimatedImageTrack",
 					"Member": "TrackName",
 					"MemberType": "Property",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
@@ -5598,7 +5715,7 @@
 					"Class": "AnimatedImageTrack",
 					"Member": "GetContent",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -5611,7 +5728,7 @@
 					"Class": "AnimatedImageTrack",
 					"Member": "GetFrameNames",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -16808,6 +16925,58 @@
 				},
 				{
 					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromUrlAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromUrlAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromUrlAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromUrlAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
 					"Member": "FetchAssetQualityValidationEntriesFromModelsAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -17680,6 +17849,59 @@
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "FetchAssetWithFormat",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ContentId"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "FetchAssetWithFormat",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "FetchAssetWithFormat",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "FetchAssetWithFormat",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
 					}
 				},
 				{
@@ -24586,6 +24808,19 @@
 				},
 				{
 					"Class": "AudioSpeechToText",
+					"Member": "UsageType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AudioSpeechToText",
 					"Member": "VoiceDetected",
 					"MemberType": "Property",
 					"Removed": false,
@@ -27787,6 +28022,19 @@
 				},
 				{
 					"Class": "AvatarAccessoryRules",
+					"Member": "BackAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
 					"Member": "CustomAccessoryMode",
 					"MemberType": "Property",
 					"Removed": false,
@@ -28047,6 +28295,58 @@
 				},
 				{
 					"Class": "AvatarAccessoryRules",
+					"Member": "FaceAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "FrontAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "HairAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "HeadAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
 					"Member": "LimitBounds",
 					"MemberType": "Property",
 					"Removed": false,
@@ -28069,6 +28369,45 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "AvatarSettingsAccessoryLimitMethod"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "NeckAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "ShoulderAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "WaistAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				},
 				{
@@ -28147,6 +28486,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "AvatarSettingsAnimationPacksMode"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "ClimbAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				},
 				{
@@ -28408,6 +28760,123 @@
 						"Category": "Primitive",
 						"Name": "int64"
 					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "FallAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "IdleAltAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "IdleAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "JumpAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "MoodAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "RunAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "SwimAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "SwimIdleAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "WalkAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
 				}
 			]
 		},
@@ -28433,6 +28902,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "AvatarSettingsAppearanceMode"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "AvatarType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "GameAvatarType"
 					}
 				},
 				{
@@ -28477,6 +28959,71 @@
 				{
 					"Class": "AvatarBodyRules",
 					"Member": "CustomBodyTypeScale",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildBodyType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildHead",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildHeight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildProportions",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildWidth",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -28814,6 +29361,32 @@
 				},
 				{
 					"Class": "AvatarBodyRules",
+					"Member": "CustomWorldHeight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "HeadOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
 					"Member": "KeepPlayerHead",
 					"MemberType": "Property",
 					"Removed": false,
@@ -28827,6 +29400,58 @@
 				},
 				{
 					"Class": "AvatarBodyRules",
+					"Member": "LeftArmOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "LeftLegOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "RightArmOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "RightLegOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
 					"Member": "ScaleMode",
 					"MemberType": "Property",
 					"Removed": false,
@@ -28836,6 +29461,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "AvatarSettingsScaleMode"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "TorsoOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				},
 				{
@@ -29124,6 +29762,45 @@
 				"<<<ROOT>>>"
 			],
 			"Related": [
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ClassicPantsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ClassicShirtsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ClassicTShirtsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
 				{
 					"Class": "AvatarClothingRules",
 					"Member": "ClothingMode",
@@ -29464,6 +30141,45 @@
 				},
 				{
 					"Class": "AvatarClothingRules",
+					"Member": "DressSkirtAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "JacketAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "LeftShoesAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
 					"Member": "LimitBounds",
 					"MemberType": "Property",
 					"Removed": false,
@@ -29473,6 +30189,84 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "PantsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "RightShoesAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ShirtAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ShortsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "SweaterAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "TShirtAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				},
 				{
@@ -34179,10 +34973,36 @@
 					}
 				},
 				{
+					"Class": "Humanoid",
+					"Member": "ApplyAvatarRulesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AvatarRules"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "LoadCharacterWithAvatarRulesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AvatarRules"
+					}
+				},
+				{
 					"Class": "Player",
 					"Member": "LoadCharacterWithAvatarRules",
 					"MemberType": "Function",
-					"Removed": false,
+					"Removed": true,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
@@ -34215,6 +35035,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "AvatarSettings",
+					"Member": "RulesSchemaVersion",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -80844,6 +81677,58 @@
 				}
 			]
 		},
+		"FeatureMatchingTable": {
+			"Name": "FeatureMatchingTable",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "FeatureMatchingTable",
+					"Member": "Data",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "SharedString"
+					}
+				},
+				{
+					"Class": "FeatureMatchingTable",
+					"Member": "SchemaName",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "FeatureMatchingTable",
+					"Member": "GetSchema",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				}
+			]
+		},
 		"FeatureRestrictionManager": {
 			"Name": "FeatureRestrictionManager",
 			"Removed": false,
@@ -83461,6 +84346,19 @@
 					"Member": "StartCall",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "FriendsCallingService",
+					"Member": "StartCall",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -84378,6 +85276,60 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GenerateAnimationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GenerateAnimationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GenerateAnimationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GenerateAnimationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
 					}
 				},
 				{
@@ -90215,6 +91167,32 @@
 				},
 				{
 					"Class": "GuiService",
+					"Member": "CoreUISafeAreaInsetBottomRight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "CoreUISafeAreaInsetTopLeft",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "GuiService",
 					"Member": "DisplayScalingMode",
 					"MemberType": "Property",
 					"Removed": false,
@@ -90228,6 +91206,19 @@
 				},
 				{
 					"Class": "GuiService",
+					"Member": "FullscreenViewport",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Rect"
+					}
+				},
+				{
+					"Class": "GuiService",
 					"Member": "GuiNavigationEnabled",
 					"MemberType": "Property",
 					"Removed": false,
@@ -90237,6 +91228,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "HardwareSafeAreaInsetBottomRight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "HardwareSafeAreaInsetTopLeft",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
 					}
 				},
 				{
@@ -90315,6 +91332,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "ScreenContextRawScreenScale",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "ScreenContextTopbarInset",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Rect"
 					}
 				},
 				{
@@ -96506,6 +97549,32 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "InternalAvatarRulesRootPartSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "InternalAvatarRulesRootPartSizeScalesWithBody",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "InternalBodyScale",
 					"MemberType": "Property",
 					"Removed": false,
@@ -97079,6 +98148,32 @@
 				{
 					"Class": "Humanoid",
 					"Member": "ApplyAvatarRules",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "ApplyAvatarRulesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AvatarRules"
+					}
+				},
+				{
+					"Class": "Humanoid",
+					"Member": "ApplyAvatarRulesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -105388,6 +106483,19 @@
 				},
 				{
 					"Class": "InputBinding",
+					"Member": "Deadzone",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "InputBinding",
 					"Member": "DisplayImage",
 					"MemberType": "Property",
 					"Removed": false,
@@ -106114,6 +107222,17 @@
 						"Name": "InputObject"
 					}
 				}
+			]
+		},
+		"InputReplayService": {
+			"Name": "InputReplayService",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
 			]
 		},
 		"InsertService": {
@@ -107372,6 +108491,7 @@
 				"FacialAnimationStreamingSubsessionStats",
 				"FastLogSettings",
 				"Feature",
+				"FeatureMatchingTable",
 				"FeatureRestrictionManager",
 				"FeedService",
 				"File",
@@ -107437,6 +108557,7 @@
 				"InputBinding",
 				"InputContext",
 				"InputObject",
+				"InputReplayService",
 				"InsertService",
 				"InstanceExtensionsService",
 				"InstanceFileSyncService",
@@ -107538,6 +108659,7 @@
 				"Pages",
 				"PartOperationAsset",
 				"ParticleEmitter",
+				"ParticleEmitter2D",
 				"PartyEmulatorService",
 				"PatchBundlerFileWatch",
 				"PatchMapping",
@@ -113471,6 +114593,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "GamePassFreeTrialRedeemed",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "LuaDialogCallbackSignal",
 					"MemberType": "Event",
 					"Removed": false,
@@ -116103,19 +117238,6 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
-					"Type": {
-						"Category": "Class",
-						"Name": "Instance"
-					}
-				},
-				{
-					"Class": "TestCase",
-					"Member": "Require",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 2,
 					"Type": {
 						"Category": "Class",
 						"Name": "Instance"
@@ -126995,6 +128117,45 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "GetPassOwnershipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "GetPassOwnershipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "GetPassOwnershipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "GetProductInfo",
 					"MemberType": "Function",
 					"Removed": false,
@@ -128998,6 +130159,71 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "RefreshBulkPurchase",
 					"MemberType": "Function",
 					"Removed": false,
@@ -129774,6 +131000,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "GamePassFreeTrialRedeemed",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Instance"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "GamePassFreeTrialRedeemed",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
 					}
 				},
 				{
@@ -145852,6 +147104,19 @@
 				},
 				{
 					"Class": "Packages",
+					"Member": "OverridesRecalculated",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Packages",
 					"Member": "ShellPackagesCount",
 					"MemberType": "Property",
 					"Removed": false,
@@ -147282,6 +148547,500 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "ParticleFlipbookTextureCompatible"
+					}
+				}
+			]
+		},
+		"ParticleEmitter2D": {
+			"Name": "ParticleEmitter2D",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Acceleration",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Blend",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Brightness",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Color",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ColorSequence"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Drag",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "EmissionAngle",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "EmissionMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ParticleEmitter2DEmissionMode"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "EmissionOffset",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "EmissionSpread",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Enabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookBlendFrames",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookFramerate",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookLayout",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ParticleFlipbookLayout"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ParticleFlipbookMode"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookSizeX",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookSizeY",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookStartRandom",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Lifetime",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "LightEmission",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "LockedToParent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Rate",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "RotSpeed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Rotation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Size",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberSequence"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Speed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "SpreadAngle",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Squash",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberSequence"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "TextureContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "TimeScale",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Transparency",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberSequence"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "ZIndex",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Clear",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Emit",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Emit",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FastForward",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FastForward",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "OnEmitRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				}
 			]
@@ -149643,6 +151402,59 @@
 				}
 			]
 		},
+		"PhysicsActivitySensor": {
+			"Name": "PhysicsActivitySensor",
+			"Removed": false,
+			"HasRemoved": false,
+			"Subclasses": [],
+			"Superclasses": [
+				"SensorBase",
+				"Instance",
+				"Object",
+				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "PhysicsActivitySensor",
+					"Member": "Active",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PhysicsActivitySensor",
+					"Member": "Position",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "PhysicsActivitySensor",
+					"Member": "Size",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				}
+			]
+		},
 		"PhysicsPacketCache": {
 			"Name": "PhysicsPacketCache",
 			"Removed": true,
@@ -150734,6 +152546,19 @@
 				{
 					"Class": "PhysicsSettings",
 					"Member": "DrawContactsNetForce",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PhysicsSettings",
+					"Member": "DrawShapecast",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -152412,6 +154237,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "GetPassOwnershipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "GetRobloxSubscriptionDetailsAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -152569,6 +154407,19 @@
 				{
 					"Class": "MarketplaceService",
 					"Member": "PromptVIPServerPurchase",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "Player"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -154453,7 +156304,7 @@
 				},
 				{
 					"Class": "Player",
-					"Member": "LoadCharacterWithAvatarRules",
+					"Member": "LoadCharacterWithAvatarRulesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -154466,7 +156317,7 @@
 				},
 				{
 					"Class": "Player",
-					"Member": "LoadCharacterWithAvatarRules",
+					"Member": "LoadCharacterWithAvatarRulesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -157673,6 +159524,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "void"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "LoadCharacterWithAvatarRules",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Class",
+						"Name": "AvatarRules"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "LoadCharacterWithAvatarRules",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				},
 				{
@@ -167271,8 +169148,8 @@
 					"Kind": "Parameter",
 					"Index": 1,
 					"Type": {
-						"Category": "Enum",
-						"Name": "ProjectServiceOperationResult"
+						"Category": "Primitive",
+						"Name": "int"
 					}
 				},
 				{
@@ -176314,6 +178191,19 @@
 				},
 				{
 					"Class": "RunService",
+					"Member": "IsTeamCreateViewer",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "IsTeamTest",
 					"MemberType": "Function",
 					"Removed": false,
@@ -182910,7 +184800,8 @@
 				"AtmosphereSensor",
 				"BuoyancySensor",
 				"ControllerSensor",
-				"FluidForceSensor"
+				"FluidForceSensor",
+				"PhysicsActivitySensor"
 			],
 			"Superclasses": [
 				"Instance",
@@ -188875,6 +190766,19 @@
 				},
 				{
 					"Class": "SoundService",
+					"Member": "GetPeakLevel",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "SoundService",
 					"Member": "GetRecordingDevices",
 					"MemberType": "Function",
 					"Removed": false,
@@ -190877,6 +192781,21 @@
 				"Instance",
 				"Object",
 				"<<<ROOT>>>"
+			],
+			"Related": [
+				{
+					"Class": "StarterGear",
+					"Member": "Loaded",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				}
 			]
 		},
 		"StarterGui": {
@@ -191732,6 +193651,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
+					}
+				},
+				{
+					"Class": "StarterPlayer",
+					"Member": "UseImprovedCharacterEvents",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
 					}
 				},
 				{
@@ -201148,19 +203080,6 @@
 				},
 				{
 					"Class": "StudioService",
-					"Member": "GetPlaceIsPersistedToCloud",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "StudioService",
 					"Member": "GetResourceByCategory",
 					"MemberType": "Function",
 					"Removed": false,
@@ -202055,6 +203974,19 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
+					}
+				},
+				{
+					"Class": "StudioService",
+					"Member": "GetPlaceIsPersistedToCloud",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -205657,6 +207589,32 @@
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
+					}
+				},
+				{
+					"Class": "SystemThemeService",
+					"Member": "setAppIcon",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "SystemThemeService",
+					"Member": "setAppIcon",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
 					}
 				},
 				{
@@ -212937,6 +214895,58 @@
 				},
 				{
 					"Class": "TestCase",
+					"Member": "Check",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "TestCase",
+					"Member": "Check",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "TestCase",
+					"Member": "Check",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestCase",
+					"Member": "Check",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "TestCase",
 					"Member": "EndTest",
 					"MemberType": "Function",
 					"Removed": false,
@@ -213061,8 +215071,8 @@
 					"Kind": "Parameter",
 					"Index": 0,
 					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
+						"Category": "Group",
+						"Name": "Variant"
 					}
 				},
 				{
@@ -213074,8 +215084,8 @@
 					"Kind": "Parameter",
 					"Index": 1,
 					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
+						"Category": "Group",
+						"Name": "Variant"
 					}
 				},
 				{
@@ -213087,21 +215097,8 @@
 					"Kind": "Parameter",
 					"Index": 2,
 					"Type": {
-						"Category": "Class",
-						"Name": "Instance"
-					}
-				},
-				{
-					"Class": "TestCase",
-					"Member": "Require",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
 						"Category": "Primitive",
-						"Name": "int"
+						"Name": "string"
 					}
 				},
 				{
@@ -230966,6 +232963,19 @@
 					"Type": {
 						"Category": "Enum",
 						"Name": "UIDragDetectorResponseStyle"
+					}
+				},
+				{
+					"Class": "UIDragDetector",
+					"Member": "Selectable",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
 					}
 				},
 				{
@@ -252198,6 +254208,34 @@
 					"Member": "Shapecast",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CoordinateFrame",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "Shapecast",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "Shapecast",
+					"MemberType": "Function",
+					"Removed": false,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -255371,17 +257409,23 @@
 			}
 		},
 		"AnimatedImageService": {
+			"AddAnimatedImageClipAsync": {
+				"Class": "AnimatedImageService",
+				"Name": "AddAnimatedImageClipAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"CreateTrack": {
 				"Class": "AnimatedImageService",
 				"Name": "CreateTrack",
 				"MemberType": "Function",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "AnimatedImageService",
 						"Member": "CreateTrack",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "ReturnType",
 						"Kind": "Type",
 						"Index": 0,
@@ -255396,25 +257440,37 @@
 				"Class": "AnimatedImageService",
 				"Name": "DestroyTrack",
 				"MemberType": "Function",
+				"Removed": true
+			},
+			"GetAnimatedImageClipFramesAsync": {
+				"Class": "AnimatedImageService",
+				"Name": "GetAnimatedImageClipFramesAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"GetAnimatedImageClipsChangedSignal": {
+				"Class": "AnimatedImageService",
+				"Name": "GetAnimatedImageClipsChangedSignal",
+				"MemberType": "Function",
 				"Removed": false
 			},
 			"GetFrameNames": {
 				"Class": "AnimatedImageService",
 				"Name": "GetFrameNames",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetTrack": {
 				"Class": "AnimatedImageService",
 				"Name": "GetTrack",
 				"MemberType": "Function",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "AnimatedImageService",
 						"Member": "GetTrack",
 						"MemberType": "Function",
-						"Removed": false,
+						"Removed": true,
 						"Field": "ReturnType",
 						"Kind": "Type",
 						"Index": 0,
@@ -255429,19 +257485,19 @@
 				"Class": "AnimatedImageService",
 				"Name": "GetTracksChanged",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"Prewarm": {
 				"Class": "AnimatedImageService",
 				"Name": "Prewarm",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"UnloadTracks": {
 				"Class": "AnimatedImageService",
 				"Name": "UnloadTracks",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"UserCreatedTracks": {
 				"Class": "AnimatedImageService",
@@ -255455,31 +257511,31 @@
 				"Class": "AnimatedImageTrack",
 				"Name": "Duration",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"FrameCount": {
 				"Class": "AnimatedImageTrack",
 				"Name": "FrameCount",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			},
 			"GetContent": {
 				"Class": "AnimatedImageTrack",
 				"Name": "GetContent",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetFrameNames": {
 				"Class": "AnimatedImageTrack",
 				"Name": "GetFrameNames",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"TrackName": {
 				"Class": "AnimatedImageTrack",
 				"Name": "TrackName",
 				"MemberType": "Property",
-				"Removed": false
+				"Removed": true
 			}
 		},
 		"Animation": {
@@ -260403,6 +262459,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"FetchAssetQualitySummaryFromUrlAsync": {
+				"Class": "AssetQualityService",
+				"Name": "FetchAssetQualitySummaryFromUrlAsync",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"FetchAssetQualityValidationEntriesFromModelsAsync": {
 				"Class": "AssetQualityService",
 				"Name": "FetchAssetQualityValidationEntriesFromModelsAsync",
@@ -260949,6 +263011,12 @@
 						}
 					}
 				]
+			},
+			"FetchAssetWithFormat": {
+				"Class": "AssetService",
+				"Name": "FetchAssetWithFormat",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"GetAssetIdsForPackage": {
 				"Class": "AssetService",
@@ -264295,6 +266363,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"UsageType": {
+				"Class": "AudioSpeechToText",
+				"Name": "UsageType",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"VoiceDetected": {
 				"Class": "AudioSpeechToText",
 				"Name": "VoiceDetected",
@@ -265935,6 +268009,12 @@
 					}
 				]
 			},
+			"BackAccessoryOverride": {
+				"Class": "AvatarAccessoryRules",
+				"Name": "BackAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"CustomAccessoryMode": {
 				"Class": "AvatarAccessoryRules",
 				"Name": "CustomAccessoryMode",
@@ -266070,6 +268150,30 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"FaceAccessoryOverride": {
+				"Class": "AvatarAccessoryRules",
+				"Name": "FaceAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"FrontAccessoryOverride": {
+				"Class": "AvatarAccessoryRules",
+				"Name": "FrontAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"HairAccessoryOverride": {
+				"Class": "AvatarAccessoryRules",
+				"Name": "HairAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"HeadAccessoryOverride": {
+				"Class": "AvatarAccessoryRules",
+				"Name": "HeadAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"LimitBounds": {
 				"Class": "AvatarAccessoryRules",
 				"Name": "LimitBounds",
@@ -266096,6 +268200,24 @@
 						}
 					}
 				]
+			},
+			"NeckAccessoryOverride": {
+				"Class": "AvatarAccessoryRules",
+				"Name": "NeckAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ShoulderAccessoryOverride": {
+				"Class": "AvatarAccessoryRules",
+				"Name": "ShoulderAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"WaistAccessoryOverride": {
+				"Class": "AvatarAccessoryRules",
+				"Name": "WaistAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
 			},
 			"willRemoveAccessory": {
 				"Class": "AvatarAccessoryRules",
@@ -266174,6 +268296,12 @@
 						}
 					}
 				]
+			},
+			"ClimbAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "ClimbAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
 			},
 			"CustomClimbAnimationEnabled": {
 				"Class": "AvatarAnimationRules",
@@ -266294,6 +268422,60 @@
 				"Name": "CustomWalkAnimationId",
 				"MemberType": "Property",
 				"Removed": false
+			},
+			"FallAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "FallAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"IdleAltAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "IdleAltAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"IdleAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "IdleAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"JumpAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "JumpAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"MoodAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "MoodAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RunAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "RunAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"SwimAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "SwimAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"SwimIdleAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "SwimIdleAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"WalkAnimationOverride": {
+				"Class": "AvatarAnimationRules",
+				"Name": "WalkAnimationOverride",
+				"MemberType": "Property",
+				"Removed": false
 			}
 		},
 		"AvatarBodyRules": {
@@ -266314,6 +268496,27 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "AvatarSettingsAppearanceMode"
+						}
+					}
+				]
+			},
+			"AvatarType": {
+				"Class": "AvatarBodyRules",
+				"Name": "AvatarType",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "AvatarBodyRules",
+						"Member": "AvatarType",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "GameAvatarType"
 						}
 					}
 				]
@@ -266390,6 +268593,36 @@
 			"CustomBodyTypeScale": {
 				"Class": "AvatarBodyRules",
 				"Name": "CustomBodyTypeScale",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"CustomBuildBodyType": {
+				"Class": "AvatarBodyRules",
+				"Name": "CustomBuildBodyType",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"CustomBuildHead": {
+				"Class": "AvatarBodyRules",
+				"Name": "CustomBuildHead",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"CustomBuildHeight": {
+				"Class": "AvatarBodyRules",
+				"Name": "CustomBuildHeight",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"CustomBuildProportions": {
+				"Class": "AvatarBodyRules",
+				"Name": "CustomBuildProportions",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"CustomBuildWidth": {
+				"Class": "AvatarBodyRules",
+				"Name": "CustomBuildWidth",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -266543,9 +268776,45 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"CustomWorldHeight": {
+				"Class": "AvatarBodyRules",
+				"Name": "CustomWorldHeight",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"HeadOverride": {
+				"Class": "AvatarBodyRules",
+				"Name": "HeadOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"KeepPlayerHead": {
 				"Class": "AvatarBodyRules",
 				"Name": "KeepPlayerHead",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LeftArmOverride": {
+				"Class": "AvatarBodyRules",
+				"Name": "LeftArmOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LeftLegOverride": {
+				"Class": "AvatarBodyRules",
+				"Name": "LeftLegOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RightArmOverride": {
+				"Class": "AvatarBodyRules",
+				"Name": "RightArmOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RightLegOverride": {
+				"Class": "AvatarBodyRules",
+				"Name": "RightLegOverride",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -266569,6 +268838,12 @@
 						}
 					}
 				]
+			},
+			"TorsoOverride": {
+				"Class": "AvatarBodyRules",
+				"Name": "TorsoOverride",
+				"MemberType": "Property",
+				"Removed": false
 			}
 		},
 		"AvatarChatService": {
@@ -266694,6 +268969,24 @@
 			}
 		},
 		"AvatarClothingRules": {
+			"ClassicPantsAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "ClassicPantsAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ClassicShirtsAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "ClassicShirtsAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ClassicTShirtsAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "ClassicTShirtsAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"ClothingMode": {
 				"Class": "AvatarClothingRules",
 				"Name": "ClothingMode",
@@ -266880,9 +269173,63 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"DressSkirtAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "DressSkirtAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"JacketAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "JacketAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LeftShoesAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "LeftShoesAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"LimitBounds": {
 				"Class": "AvatarClothingRules",
 				"Name": "LimitBounds",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"PantsAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "PantsAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RightShoesAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "RightShoesAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ShirtAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "ShirtAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ShortsAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "ShortsAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"SweaterAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "SweaterAccessoryOverride",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"TShirtAccessoryOverride": {
+				"Class": "AvatarClothingRules",
+				"Name": "TShirtAccessoryOverride",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -269552,6 +271899,12 @@
 				"Class": "AvatarSettings",
 				"Name": "RefreshPluginState",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"RulesSchemaVersion": {
+				"Class": "AvatarSettings",
+				"Name": "RulesSchemaVersion",
+				"MemberType": "Property",
 				"Removed": false
 			}
 		},
@@ -288349,6 +290702,26 @@
 				]
 			}
 		},
+		"FeatureMatchingTable": {
+			"Data": {
+				"Class": "FeatureMatchingTable",
+				"Name": "Data",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"GetSchema": {
+				"Class": "FeatureMatchingTable",
+				"Name": "GetSchema",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"SchemaName": {
+				"Class": "FeatureMatchingTable",
+				"Name": "SchemaName",
+				"MemberType": "Property",
+				"Removed": false
+			}
+		},
 		"FeatureRestrictionManager": {
 			"FeatureTimeoutAttempt": {
 				"Class": "FeatureRestrictionManager",
@@ -289840,6 +292213,12 @@
 						}
 					}
 				]
+			},
+			"GenerateAnimationAsync": {
+				"Class": "GenerationService",
+				"Name": "GenerateAnimationAsync",
+				"MemberType": "Function",
+				"Removed": false
 			},
 			"GenerateMeshAsync": {
 				"Class": "GenerationService",
@@ -292434,6 +294813,18 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"CoreUISafeAreaInsetBottomRight": {
+				"Class": "GuiService",
+				"Name": "CoreUISafeAreaInsetBottomRight",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"CoreUISafeAreaInsetTopLeft": {
+				"Class": "GuiService",
+				"Name": "CoreUISafeAreaInsetTopLeft",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"DismissNotification": {
 				"Class": "GuiService",
 				"Name": "DismissNotification",
@@ -292483,6 +294874,12 @@
 				"Class": "GuiService",
 				"Name": "ForceTenFootInterface",
 				"MemberType": "Function",
+				"Removed": false
+			},
+			"FullscreenViewport": {
+				"Class": "GuiService",
+				"Name": "FullscreenViewport",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"GamepadNavigationEnabled": {
@@ -292769,6 +295166,18 @@
 						}
 					}
 				]
+			},
+			"HardwareSafeAreaInsetBottomRight": {
+				"Class": "GuiService",
+				"Name": "HardwareSafeAreaInsetBottomRight",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"HardwareSafeAreaInsetTopLeft": {
+				"Class": "GuiService",
+				"Name": "HardwareSafeAreaInsetTopLeft",
+				"MemberType": "Property",
+				"Removed": false
 			},
 			"InspectMenuEnabledChangedSignal": {
 				"Class": "GuiService",
@@ -293095,6 +295504,18 @@
 				"Class": "GuiService",
 				"Name": "SafeZoneOffsetsChanged",
 				"MemberType": "Event",
+				"Removed": false
+			},
+			"ScreenContextRawScreenScale": {
+				"Class": "GuiService",
+				"Name": "ScreenContextRawScreenScale",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ScreenContextTopbarInset": {
+				"Class": "GuiService",
+				"Name": "ScreenContextTopbarInset",
+				"MemberType": "Property",
 				"Removed": false
 			},
 			"ScreenGuiEnabled": {
@@ -295509,6 +297930,27 @@
 					}
 				]
 			},
+			"ApplyAvatarRulesAsync": {
+				"Class": "Humanoid",
+				"Name": "ApplyAvatarRulesAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Humanoid",
+						"Member": "ApplyAvatarRulesAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "AvatarRules"
+						}
+					}
+				]
+			},
 			"ApplyDescription": {
 				"Class": "Humanoid",
 				"Name": "ApplyDescription",
@@ -296272,6 +298714,18 @@
 			"HipHeight": {
 				"Class": "Humanoid",
 				"Name": "HipHeight",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"InternalAvatarRulesRootPartSize": {
+				"Class": "Humanoid",
+				"Name": "InternalAvatarRulesRootPartSize",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"InternalAvatarRulesRootPartSizeScalesWithBody": {
+				"Class": "Humanoid",
+				"Name": "InternalAvatarRulesRootPartSizeScalesWithBody",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -300583,6 +303037,12 @@
 			"ClampMagnitudeToOne": {
 				"Class": "InputBinding",
 				"Name": "ClampMagnitudeToOne",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Deadzone": {
+				"Class": "InputBinding",
+				"Name": "Deadzone",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -305740,6 +308200,27 @@
 				"MemberType": "Event",
 				"Removed": false
 			},
+			"GamePassFreeTrialRedeemed": {
+				"Class": "MarketplaceService",
+				"Name": "GamePassFreeTrialRedeemed",
+				"MemberType": "Event",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "GamePassFreeTrialRedeemed",
+						"MemberType": "Event",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						}
+					}
+				]
+			},
 			"GetAvailableSubscriptionProductsAsync": {
 				"Class": "MarketplaceService",
 				"Name": "GetAvailableSubscriptionProductsAsync",
@@ -305784,6 +308265,27 @@
 						"Type": {
 							"Category": "Class",
 							"Name": "Instance"
+						}
+					}
+				]
+			},
+			"GetPassOwnershipAsync": {
+				"Class": "MarketplaceService",
+				"Name": "GetPassOwnershipAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "GetPassOwnershipAsync",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
 						}
 					}
 				]
@@ -307427,6 +309929,27 @@
 				"Name": "RecommendTopProductsAsync",
 				"MemberType": "Function",
 				"Removed": false
+			},
+			"RedeemGamePassFreeTrial": {
+				"Class": "MarketplaceService",
+				"Name": "RedeemGamePassFreeTrial",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "MarketplaceService",
+						"Member": "RedeemGamePassFreeTrial",
+						"MemberType": "Function",
+						"Removed": false,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "Player"
+						}
+					}
+				]
 			},
 			"RefreshBulkPurchase": {
 				"Class": "MarketplaceService",
@@ -313767,6 +316290,12 @@
 				"MemberType": "Property",
 				"Removed": false
 			},
+			"OverridesRecalculated": {
+				"Class": "Packages",
+				"Name": "OverridesRecalculated",
+				"MemberType": "Property",
+				"Removed": false
+			},
 			"ShellPackagesCount": {
 				"Class": "Packages",
 				"Name": "ShellPackagesCount",
@@ -314578,6 +317107,269 @@
 			"ZOffset": {
 				"Class": "ParticleEmitter",
 				"Name": "ZOffset",
+				"MemberType": "Property",
+				"Removed": false
+			}
+		},
+		"ParticleEmitter2D": {
+			"Acceleration": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Acceleration",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Blend": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Blend",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Brightness": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Brightness",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Clear": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Clear",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"Color": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Color",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Drag": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Drag",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"EmissionAngle": {
+				"Class": "ParticleEmitter2D",
+				"Name": "EmissionAngle",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"EmissionMode": {
+				"Class": "ParticleEmitter2D",
+				"Name": "EmissionMode",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ParticleEmitter2D",
+						"Member": "EmissionMode",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ParticleEmitter2DEmissionMode"
+						}
+					}
+				]
+			},
+			"EmissionOffset": {
+				"Class": "ParticleEmitter2D",
+				"Name": "EmissionOffset",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"EmissionSpread": {
+				"Class": "ParticleEmitter2D",
+				"Name": "EmissionSpread",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Emit": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Emit",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"Enabled": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Enabled",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"FastForward": {
+				"Class": "ParticleEmitter2D",
+				"Name": "FastForward",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"FlipbookBlendFrames": {
+				"Class": "ParticleEmitter2D",
+				"Name": "FlipbookBlendFrames",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"FlipbookFramerate": {
+				"Class": "ParticleEmitter2D",
+				"Name": "FlipbookFramerate",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"FlipbookLayout": {
+				"Class": "ParticleEmitter2D",
+				"Name": "FlipbookLayout",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ParticleEmitter2D",
+						"Member": "FlipbookLayout",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ParticleFlipbookLayout"
+						}
+					}
+				]
+			},
+			"FlipbookMode": {
+				"Class": "ParticleEmitter2D",
+				"Name": "FlipbookMode",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "ParticleEmitter2D",
+						"Member": "FlipbookMode",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "ParticleFlipbookMode"
+						}
+					}
+				]
+			},
+			"FlipbookSizeX": {
+				"Class": "ParticleEmitter2D",
+				"Name": "FlipbookSizeX",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"FlipbookSizeY": {
+				"Class": "ParticleEmitter2D",
+				"Name": "FlipbookSizeY",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"FlipbookStartRandom": {
+				"Class": "ParticleEmitter2D",
+				"Name": "FlipbookStartRandom",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Lifetime": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Lifetime",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LightEmission": {
+				"Class": "ParticleEmitter2D",
+				"Name": "LightEmission",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"LockedToParent": {
+				"Class": "ParticleEmitter2D",
+				"Name": "LockedToParent",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"OnClearRequested": {
+				"Class": "ParticleEmitter2D",
+				"Name": "OnClearRequested",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"OnEmitRequested": {
+				"Class": "ParticleEmitter2D",
+				"Name": "OnEmitRequested",
+				"MemberType": "Event",
+				"Removed": false
+			},
+			"Rate": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Rate",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"RotSpeed": {
+				"Class": "ParticleEmitter2D",
+				"Name": "RotSpeed",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Rotation": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Rotation",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Size": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Size",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Speed": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Speed",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"SpreadAngle": {
+				"Class": "ParticleEmitter2D",
+				"Name": "SpreadAngle",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Squash": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Squash",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"TextureContent": {
+				"Class": "ParticleEmitter2D",
+				"Name": "TextureContent",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"TimeScale": {
+				"Class": "ParticleEmitter2D",
+				"Name": "TimeScale",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Transparency": {
+				"Class": "ParticleEmitter2D",
+				"Name": "Transparency",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"ZIndex": {
+				"Class": "ParticleEmitter2D",
+				"Name": "ZIndex",
 				"MemberType": "Property",
 				"Removed": false
 			}
@@ -315509,6 +318301,26 @@
 				"Removed": true
 			}
 		},
+		"PhysicsActivitySensor": {
+			"Active": {
+				"Class": "PhysicsActivitySensor",
+				"Name": "Active",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Position": {
+				"Class": "PhysicsActivitySensor",
+				"Name": "Position",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"Size": {
+				"Class": "PhysicsActivitySensor",
+				"Name": "Size",
+				"MemberType": "Property",
+				"Removed": false
+			}
+		},
 		"PhysicsService": {
 			"CollisionGroupCollidableChanged": {
 				"Class": "PhysicsService",
@@ -315911,6 +318723,12 @@
 			"DrawContactsNetForce": {
 				"Class": "PhysicsSettings",
 				"Name": "DrawContactsNetForce",
+				"MemberType": "Property",
+				"Removed": false
+			},
+			"DrawShapecast": {
+				"Class": "PhysicsSettings",
+				"Name": "DrawShapecast",
 				"MemberType": "Property",
 				"Removed": false
 			},
@@ -316818,6 +319636,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"EmotesLoaded": {
+				"Class": "Player",
+				"Name": "EmotesLoaded",
+				"MemberType": "Event",
+				"Removed": false
+			},
 			"FollowUserId": {
 				"Class": "Player",
 				"Name": "FollowUserId",
@@ -317340,11 +320164,32 @@
 				"Class": "Player",
 				"Name": "LoadCharacterWithAvatarRules",
 				"MemberType": "Function",
-				"Removed": false,
+				"Removed": true,
 				"Related": [
 					{
 						"Class": "Player",
 						"Member": "LoadCharacterWithAvatarRules",
+						"MemberType": "Function",
+						"Removed": true,
+						"Field": "Parameters",
+						"Kind": "Parameter",
+						"Index": 0,
+						"Type": {
+							"Category": "Class",
+							"Name": "AvatarRules"
+						}
+					}
+				]
+			},
+			"LoadCharacterWithAvatarRulesAsync": {
+				"Class": "Player",
+				"Name": "LoadCharacterWithAvatarRulesAsync",
+				"MemberType": "Function",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "Player",
+						"Member": "LoadCharacterWithAvatarRulesAsync",
 						"MemberType": "Function",
 						"Removed": false,
 						"Field": "Parameters",
@@ -323016,22 +325861,7 @@
 				"Class": "ProjectService",
 				"Name": "ContentMapMutationResult",
 				"MemberType": "Event",
-				"Removed": false,
-				"Related": [
-					{
-						"Class": "ProjectService",
-						"Member": "ContentMapMutationResult",
-						"MemberType": "Event",
-						"Removed": false,
-						"Field": "Parameters",
-						"Kind": "Parameter",
-						"Index": 1,
-						"Type": {
-							"Category": "Enum",
-							"Name": "ProjectServiceOperationResult"
-						}
-					}
-				]
+				"Removed": false
 			},
 			"ContentMapRemovePathRequested": {
 				"Class": "ProjectService",
@@ -327087,6 +329917,12 @@
 			"IsStudio": {
 				"Class": "RunService",
 				"Name": "IsStudio",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"IsTeamCreateViewer": {
+				"Class": "RunService",
+				"Name": "IsTeamCreateViewer",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -332911,6 +335747,12 @@
 				"MemberType": "Function",
 				"Removed": false
 			},
+			"GetPeakLevel": {
+				"Class": "SoundService",
+				"Name": "GetPeakLevel",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"GetRecordingDevices": {
 				"Class": "SoundService",
 				"Name": "GetRecordingDevices",
@@ -333763,6 +336605,14 @@
 				"Class": "StartPageService",
 				"Name": "startTutorial",
 				"MemberType": "Function",
+				"Removed": false
+			}
+		},
+		"StarterGear": {
+			"Loaded": {
+				"Class": "StarterGear",
+				"Name": "Loaded",
+				"MemberType": "Property",
 				"Removed": false
 			}
 		},
@@ -334737,6 +337587,27 @@
 						"Type": {
 							"Category": "Enum",
 							"Name": "ScreenOrientation"
+						}
+					}
+				]
+			},
+			"UseImprovedCharacterEvents": {
+				"Class": "StarterPlayer",
+				"Name": "UseImprovedCharacterEvents",
+				"MemberType": "Property",
+				"Removed": false,
+				"Related": [
+					{
+						"Class": "StarterPlayer",
+						"Member": "UseImprovedCharacterEvents",
+						"MemberType": "Property",
+						"Removed": false,
+						"Field": "ValueType",
+						"Kind": "Type",
+						"Index": -1,
+						"Type": {
+							"Category": "Enum",
+							"Name": "RolloutState"
 						}
 					}
 				]
@@ -338765,7 +341636,7 @@
 				"Class": "StudioService",
 				"Name": "GetPlaceIsPersistedToCloud",
 				"MemberType": "Function",
-				"Removed": false
+				"Removed": true
 			},
 			"GetResourceByCategory": {
 				"Class": "StudioService",
@@ -340645,6 +343516,12 @@
 			"isSystemThemeAvailable": {
 				"Class": "SystemThemeService",
 				"Name": "isSystemThemeAvailable",
+				"MemberType": "Function",
+				"Removed": false
+			},
+			"setAppIcon": {
+				"Class": "SystemThemeService",
+				"Name": "setAppIcon",
 				"MemberType": "Function",
 				"Removed": false
 			},
@@ -343360,6 +346237,12 @@
 					}
 				]
 			},
+			"Check": {
+				"Class": "TestCase",
+				"Name": "Check",
+				"MemberType": "Function",
+				"Removed": false
+			},
 			"EndTest": {
 				"Class": "TestCase",
 				"Name": "EndTest",
@@ -343412,22 +346295,7 @@
 				"Class": "TestCase",
 				"Name": "Require",
 				"MemberType": "Function",
-				"Removed": false,
-				"Related": [
-					{
-						"Class": "TestCase",
-						"Member": "Require",
-						"MemberType": "Function",
-						"Removed": false,
-						"Field": "Parameters",
-						"Kind": "Parameter",
-						"Index": 2,
-						"Type": {
-							"Category": "Class",
-							"Name": "Instance"
-						}
-					}
-				]
+				"Removed": false
 			},
 			"RequireLegacy": {
 				"Class": "TestCase",
@@ -351285,6 +354153,12 @@
 						}
 					}
 				]
+			},
+			"Selectable": {
+				"Class": "UIDragDetector",
+				"Name": "Selectable",
+				"MemberType": "Property",
+				"Removed": false
 			},
 			"SelectionModeDragSpeed": {
 				"Class": "UIDragDetector",
@@ -364356,7 +367230,8 @@
 				"EyeMakeup",
 				"VoxelFragment",
 				"AvatarBackground",
-				"TextDocument"
+				"TextDocument",
+				"AnimatedImage"
 			],
 			"ItemsByIndex": [
 				"Image",
@@ -364425,7 +367300,8 @@
 				"EyeMakeup",
 				"AvatarBackground",
 				"VoxelFragment",
-				"TextDocument"
+				"TextDocument",
+				"AnimatedImage"
 			],
 			"Related": [
 				{
@@ -371969,6 +374845,32 @@
 				}
 			]
 		},
+		"FeatureChannelEncoding": {
+			"Name": "FeatureChannelEncoding",
+			"Removed": false,
+			"ItemsByValue": [
+				"Float32",
+				"Float16"
+			],
+			"ItemsByIndex": [
+				"Float32",
+				"Float16"
+			]
+		},
+		"FeatureNormalization": {
+			"Name": "FeatureNormalization",
+			"Removed": false,
+			"ItemsByValue": [
+				"None",
+				"StandardScore",
+				"UnitL2"
+			],
+			"ItemsByIndex": [
+				"None",
+				"StandardScore",
+				"UnitL2"
+			]
+		},
 		"FeatureRestrictionAbuseVector": {
 			"Name": "FeatureRestrictionAbuseVector",
 			"Removed": false,
@@ -373309,6 +376211,19 @@
 				"PlayerChoice"
 			],
 			"Related": [
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "AvatarType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "GameAvatarType"
+					}
+				},
 				{
 					"Class": "AvatarRules",
 					"Member": "AvatarType",
@@ -379288,6 +382203,42 @@
 				}
 			]
 		},
+		"MetadataFieldType": {
+			"Name": "MetadataFieldType",
+			"Removed": false,
+			"ItemsByValue": [
+				"UInt8",
+				"UInt16",
+				"UInt32",
+				"Float32",
+				"Int32",
+				"Int64",
+				"UInt64",
+				"Float64",
+				"Buffer",
+				"Vector3",
+				"CFrame",
+				"ContentId",
+				"TagMask32",
+				"Vector2"
+			],
+			"ItemsByIndex": [
+				"UInt8",
+				"UInt16",
+				"UInt32",
+				"Float32",
+				"Int32",
+				"Int64",
+				"UInt64",
+				"Float64",
+				"Buffer",
+				"Vector3",
+				"CFrame",
+				"ContentId",
+				"TagMask32",
+				"Vector2"
+			]
+		},
 		"ModelLevelOfDetail": {
 			"Name": "ModelLevelOfDetail",
 			"Removed": false,
@@ -380758,6 +383709,33 @@
 				}
 			]
 		},
+		"ParticleEmitter2DEmissionMode": {
+			"Name": "ParticleEmitter2DEmissionMode",
+			"Removed": false,
+			"ItemsByValue": [
+				"Point",
+				"BoundingBox"
+			],
+			"ItemsByIndex": [
+				"Point",
+				"BoundingBox"
+			],
+			"Related": [
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "EmissionMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ParticleEmitter2DEmissionMode"
+					}
+				}
+			]
+		},
 		"ParticleEmitterShape": {
 			"Name": "ParticleEmitterShape",
 			"Removed": false,
@@ -380881,6 +383859,19 @@
 						"Category": "Enum",
 						"Name": "ParticleFlipbookLayout"
 					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookLayout",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ParticleFlipbookLayout"
+					}
 				}
 			]
 		},
@@ -380902,6 +383893,19 @@
 			"Related": [
 				{
 					"Class": "ParticleEmitter",
+					"Member": "FlipbookMode",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "ParticleFlipbookMode"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
 					"Member": "FlipbookMode",
 					"MemberType": "Property",
 					"Removed": false,
@@ -382523,24 +385527,9 @@
 		},
 		"ProjectServiceOperationResult": {
 			"Name": "ProjectServiceOperationResult",
-			"Removed": false,
+			"Removed": true,
 			"ItemsByValue": [],
-			"ItemsByIndex": [],
-			"Related": [
-				{
-					"Class": "ProjectService",
-					"Member": "ContentMapMutationResult",
-					"MemberType": "Event",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Enum",
-						"Name": "ProjectServiceOperationResult"
-					}
-				}
-			]
+			"ItemsByIndex": []
 		},
 		"ProjectionType": {
 			"Name": "ProjectionType",
@@ -384676,6 +387665,19 @@
 				{
 					"Class": "StarterPlayer",
 					"Member": "AvatarJointUpgrade_SerializedRollout",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					}
+				},
+				{
+					"Class": "StarterPlayer",
+					"Member": "UseImprovedCharacterEvents",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -395201,6 +398203,11 @@
 			}
 		},
 		"AssetType": {
+			"AnimatedImage": {
+				"Enum": "AssetType",
+				"Name": "AnimatedImage",
+				"Removed": false
+			},
 			"Animation": {
 				"Enum": "AssetType",
 				"Name": "Animation",
@@ -400997,6 +404004,35 @@
 				"Removed": false
 			}
 		},
+		"FeatureChannelEncoding": {
+			"Float16": {
+				"Enum": "FeatureChannelEncoding",
+				"Name": "Float16",
+				"Removed": false
+			},
+			"Float32": {
+				"Enum": "FeatureChannelEncoding",
+				"Name": "Float32",
+				"Removed": false
+			}
+		},
+		"FeatureNormalization": {
+			"None": {
+				"Enum": "FeatureNormalization",
+				"Name": "None",
+				"Removed": false
+			},
+			"StandardScore": {
+				"Enum": "FeatureNormalization",
+				"Name": "StandardScore",
+				"Removed": false
+			},
+			"UnitL2": {
+				"Enum": "FeatureNormalization",
+				"Name": "UnitL2",
+				"Removed": false
+			}
+		},
 		"FeatureRestrictionAbuseVector": {
 			"Communication": {
 				"Enum": "FeatureRestrictionAbuseVector",
@@ -406318,6 +409354,78 @@
 				"Removed": false
 			}
 		},
+		"MetadataFieldType": {
+			"Buffer": {
+				"Enum": "MetadataFieldType",
+				"Name": "Buffer",
+				"Removed": false
+			},
+			"CFrame": {
+				"Enum": "MetadataFieldType",
+				"Name": "CFrame",
+				"Removed": false
+			},
+			"ContentId": {
+				"Enum": "MetadataFieldType",
+				"Name": "ContentId",
+				"Removed": false
+			},
+			"Float32": {
+				"Enum": "MetadataFieldType",
+				"Name": "Float32",
+				"Removed": false
+			},
+			"Float64": {
+				"Enum": "MetadataFieldType",
+				"Name": "Float64",
+				"Removed": false
+			},
+			"Int32": {
+				"Enum": "MetadataFieldType",
+				"Name": "Int32",
+				"Removed": false
+			},
+			"Int64": {
+				"Enum": "MetadataFieldType",
+				"Name": "Int64",
+				"Removed": false
+			},
+			"TagMask32": {
+				"Enum": "MetadataFieldType",
+				"Name": "TagMask32",
+				"Removed": false
+			},
+			"UInt16": {
+				"Enum": "MetadataFieldType",
+				"Name": "UInt16",
+				"Removed": false
+			},
+			"UInt32": {
+				"Enum": "MetadataFieldType",
+				"Name": "UInt32",
+				"Removed": false
+			},
+			"UInt64": {
+				"Enum": "MetadataFieldType",
+				"Name": "UInt64",
+				"Removed": false
+			},
+			"UInt8": {
+				"Enum": "MetadataFieldType",
+				"Name": "UInt8",
+				"Removed": false
+			},
+			"Vector2": {
+				"Enum": "MetadataFieldType",
+				"Name": "Vector2",
+				"Removed": false
+			},
+			"Vector3": {
+				"Enum": "MetadataFieldType",
+				"Name": "Vector3",
+				"Removed": false
+			}
+		},
 		"ModelLevelOfDetail": {
 			"Automatic": {
 				"Enum": "ModelLevelOfDetail",
@@ -407023,6 +410131,18 @@
 			"Wedge": {
 				"Enum": "PartType",
 				"Name": "Wedge",
+				"Removed": false
+			}
+		},
+		"ParticleEmitter2DEmissionMode": {
+			"BoundingBox": {
+				"Enum": "ParticleEmitter2DEmissionMode",
+				"Name": "BoundingBox",
+				"Removed": false
+			},
+			"Point": {
+				"Enum": "ParticleEmitter2DEmissionMode",
+				"Name": "Point",
 				"Removed": false
 			}
 		},
@@ -416621,7 +419741,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "CreateTrack",
+					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -416634,20 +419754,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "GetFrameNames",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Group",
-						"Name": "Array"
-					}
-				},
-				{
-					"Class": "AnimatedImageTrack",
-					"Member": "GetFrameNames",
+					"Member": "GetAnimatedImageClipFramesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -416939,6 +420046,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromUrlAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
 					"Type": {
 						"Category": "Group",
 						"Name": "Array"
@@ -422850,6 +425970,45 @@
 				{
 					"Class": "AnimatedImage",
 					"Member": "GetBoundTracks",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "CreateTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "GetFrameNames",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -430975,6 +434134,19 @@
 					}
 				},
 				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Color",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ColorSequence"
+					}
+				},
+				{
 					"Class": "Trail",
 					"Member": "Color",
 					"MemberType": "Property",
@@ -431035,7 +434207,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "CreateTrack",
+					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -431048,7 +434220,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "DestroyTrack",
+					"Member": "GetAnimatedImageClipFramesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -431061,76 +434233,11 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "GetFrameNames",
+					"Member": "GetAnimatedImageClipsChangedSignal",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetTrack",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetTracksChanged",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "Prewarm",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "UnloadTracks",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "DataType",
-						"Name": "Content"
-					}
-				},
-				{
-					"Class": "AnimatedImageTrack",
-					"Member": "GetContent",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
 					"Index": 0,
 					"Type": {
 						"Category": "DataType",
@@ -431944,6 +435051,19 @@
 					}
 				},
 				{
+					"Class": "ParticleEmitter2D",
+					"Member": "TextureContent",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
 					"Class": "PluginToolbarButton",
 					"Member": "IconContent",
 					"MemberType": "Property",
@@ -432529,6 +435649,110 @@
 					}
 				},
 				{
+					"Class": "AnimatedImageService",
+					"Member": "CreateTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "DestroyTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetFrameNames",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTracksChanged",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "Prewarm",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "UnloadTracks",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "GetContent",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Content"
+					}
+				},
+				{
 					"Class": "AssetService",
 					"Member": "CreateDynamicImageAsync",
 					"MemberType": "Function",
@@ -432929,6 +436153,19 @@
 					"Class": "Animator",
 					"Member": "OnGraphParameterUpdate",
 					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "ContentId"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "FetchAssetWithFormat",
+					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
@@ -434563,6 +437800,20 @@
 					}
 				},
 				{
+					"Class": "WorldRoot",
+					"Member": "Shapecast",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
+					"Type": {
+						"Category": "DataType",
+						"Name": "CoordinateFrame",
+						"Optional": true
+					}
+				},
+				{
 					"Class": "WrapDeformer",
 					"Member": "SetCageMeshContent",
 					"MemberType": "Function",
@@ -435190,6 +438441,19 @@
 				},
 				{
 					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromUrlAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
 					"Member": "FetchAssetQualityValidationEntriesFromModelsAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -435399,6 +438663,20 @@
 					"Type": {
 						"Category": "Group",
 						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "FetchAssetWithFormat",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
 					}
 				},
 				{
@@ -436902,6 +440180,59 @@
 					}
 				},
 				{
+					"Class": "FeatureMatchingTable",
+					"Member": "GetSchema",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "FriendsCallingService",
+					"Member": "StartCall",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GenerateAnimationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GenerateAnimationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary",
+						"Optional": true
+					}
+				},
+				{
 					"Class": "GenerationService",
 					"Member": "GenerateMeshAsync",
 					"MemberType": "Function",
@@ -437856,6 +441187,19 @@
 				{
 					"Class": "MarkerCurve",
 					"Member": "GetMarkerAtIndex",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "GetPassOwnershipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -443164,6 +446508,20 @@
 				},
 				{
 					"Class": "GenerationService",
+					"Member": "GenerateAnimationAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Function",
+						"Optional": true
+					}
+				},
+				{
+					"Class": "GenerationService",
 					"Member": "GenerateMeshAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -444434,6 +447792,19 @@
 				{
 					"Class": "AssetImportSession",
 					"Member": "GetKeyframeSequencesForSelectedRestPoseWithClip",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Instances"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "FetchAssetWithFormat",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -447223,6 +450594,71 @@
 				},
 				{
 					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildBodyType",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildHead",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildHeight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildProportions",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomBuildWidth",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
 					"Member": "CustomHeadScale",
 					"MemberType": "Property",
 					"Removed": false,
@@ -447287,6 +450723,32 @@
 					}
 				},
 				{
+					"Class": "AvatarBodyRules",
+					"Member": "CustomWorldHeight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "InputBinding",
+					"Member": "Deadzone",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
 					"Class": "ParticleEmitter",
 					"Member": "FlipbookFramerate",
 					"MemberType": "Property",
@@ -447340,6 +450802,71 @@
 				},
 				{
 					"Class": "ParticleEmitter",
+					"Member": "Speed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookFramerate",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Lifetime",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "RotSpeed",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Rotation",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberRange"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
 					"Member": "Speed",
 					"MemberType": "Property",
 					"Removed": false,
@@ -447581,6 +451108,45 @@
 				},
 				{
 					"Class": "ParticleEmitter",
+					"Member": "Transparency",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberSequence"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Size",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberSequence"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Squash",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "NumberSequence"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
 					"Member": "Transparency",
 					"MemberType": "Property",
 					"Removed": false,
@@ -449009,7 +452575,7 @@
 			"Related": [
 				{
 					"Class": "AnimatedImageService",
-					"Member": "GetTracksChanged",
+					"Member": "GetAnimatedImageClipsChangedSignal",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -449246,6 +452812,19 @@
 					"Member": "CommitBlock",
 					"MemberType": "Function",
 					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "DataType",
+						"Name": "RBXScriptSignal"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTracksChanged",
+					"MemberType": "Function",
+					"Removed": true,
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
@@ -449720,6 +453299,32 @@
 				{
 					"Class": "GuiObject",
 					"Member": "SelectionRect2D",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Rect"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "FullscreenViewport",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Rect"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "ScreenContextTopbarInset",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -450700,6 +454305,19 @@
 				{
 					"Class": "EditableMesh",
 					"Member": "MeshData",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "SharedString"
+					}
+				},
+				{
+					"Class": "FeatureMatchingTable",
+					"Member": "Data",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -451897,6 +455515,19 @@
 				{
 					"Class": "GenerationService",
 					"Member": "ConnectAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Class": "GenerationService",
+					"Member": "GenerateAnimationAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -457430,6 +461061,58 @@
 					}
 				},
 				{
+					"Class": "TestCase",
+					"Member": "Check",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "TestCase",
+					"Member": "Check",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "TestCase",
+					"Member": "Require",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Class": "TestCase",
+					"Member": "Require",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
 					"Class": "TestFailure",
 					"Member": "GetActual",
 					"MemberType": "Function",
@@ -458571,6 +462254,58 @@
 				},
 				{
 					"Class": "GuiService",
+					"Member": "CoreUISafeAreaInsetBottomRight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "CoreUISafeAreaInsetTopLeft",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "HardwareSafeAreaInsetBottomRight",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "GuiService",
+					"Member": "HardwareSafeAreaInsetTopLeft",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "GuiService",
 					"Member": "ViewportSizeInMM",
 					"MemberType": "Property",
 					"Removed": false,
@@ -458767,6 +462502,45 @@
 				{
 					"Class": "ParticleEmitter",
 					"Member": "SpreadAngle",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Acceleration",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "EmissionOffset",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "EmissionSpread",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -462500,6 +466274,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "InternalAvatarRulesRootPartSize",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "InternalBodyScale",
 					"MemberType": "Property",
 					"Removed": false,
@@ -463852,6 +467639,32 @@
 					}
 				},
 				{
+					"Class": "PhysicsActivitySensor",
+					"Member": "Position",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "PhysicsActivitySensor",
+					"Member": "Size",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
 					"Class": "Player",
 					"Member": "ChararacterRegionId",
 					"MemberType": "Property",
@@ -465189,6 +469002,20 @@
 					"Type": {
 						"Category": "DataType",
 						"Name": "Vector3"
+					}
+				},
+				{
+					"Class": "WorldRoot",
+					"Member": "Shapecast",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 4,
+					"Type": {
+						"Category": "DataType",
+						"Name": "Vector3",
+						"Optional": true
 					}
 				},
 				{
@@ -473977,6 +477804,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "InternalAvatarRulesRootPartSizeScalesWithBody",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "Jump",
 					"MemberType": "Property",
 					"Removed": false,
@@ -476914,6 +480754,19 @@
 					}
 				},
 				{
+					"Class": "Packages",
+					"Member": "OverridesRecalculated",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
 					"Class": "Pages",
 					"Member": "IsFinished",
 					"MemberType": "Property",
@@ -477007,6 +480860,58 @@
 				{
 					"Class": "ParticleEmitter",
 					"Member": "WindAffectsDrag",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Enabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookBlendFrames",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookStartRandom",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "LockedToParent",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -477168,6 +481073,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PhysicsActivitySensor",
+					"Member": "Active",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -477670,6 +481588,19 @@
 				{
 					"Class": "PhysicsSettings",
 					"Member": "DrawContactsNetForce",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "PhysicsSettings",
+					"Member": "DrawShapecast",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -480061,6 +483992,19 @@
 				},
 				{
 					"Class": "RunService",
+					"Member": "IsTeamCreateViewer",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "RunService",
 					"Member": "IsTeamTest",
 					"MemberType": "Function",
 					"Removed": false,
@@ -481250,6 +485194,19 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "StarterGear",
+					"Member": "Loaded",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "bool"
@@ -483181,19 +487138,6 @@
 				},
 				{
 					"Class": "StudioService",
-					"Member": "GetPlaceIsPersistedToCloud",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "StudioService",
 					"Member": "HasInternalPermission",
 					"MemberType": "Function",
 					"Removed": false,
@@ -483689,19 +487633,6 @@
 				{
 					"Class": "TestCase",
 					"Member": "AssertLegacy",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "bool"
-					}
-				},
-				{
-					"Class": "TestCase",
-					"Member": "Require",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -485379,6 +489310,19 @@
 				{
 					"Class": "UIDragDetector",
 					"Member": "Enabled",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "UIDragDetector",
+					"Member": "Selectable",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -492469,6 +496413,19 @@
 				},
 				{
 					"Class": "StudioService",
+					"Member": "GetPlaceIsPersistedToCloud",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Class": "StudioService",
 					"Member": "GetUserIsInTeamCreateToggleRamp",
 					"MemberType": "Function",
 					"Removed": true,
@@ -496979,19 +500936,6 @@
 				{
 					"Class": "AngularVelocity",
 					"Member": "MaxTorque",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "float"
-					}
-				},
-				{
-					"Class": "AnimatedImageTrack",
-					"Member": "Duration",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -502310,6 +506254,19 @@
 				},
 				{
 					"Class": "GuiService",
+					"Member": "ScreenContextRawScreenScale",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "GuiService",
 					"Member": "GetRawScreenScale",
 					"MemberType": "Function",
 					"Removed": false,
@@ -504311,6 +508268,110 @@
 					}
 				},
 				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Blend",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Brightness",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Drag",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "EmissionAngle",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "LightEmission",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Rate",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "SpreadAngle",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "TimeScale",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
 					"Class": "Path2D",
 					"Member": "Thickness",
 					"MemberType": "Property",
@@ -506034,6 +510095,19 @@
 					"Field": "ValueType",
 					"Kind": "Type",
 					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Class": "SoundService",
+					"Member": "GetPeakLevel",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "float"
@@ -509695,6 +513769,19 @@
 					}
 				},
 				{
+					"Class": "AnimatedImageTrack",
+					"Member": "Duration",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
 					"Class": "Animator",
 					"Member": "FadeTime0",
 					"MemberType": "Property",
@@ -511834,19 +515921,6 @@
 					}
 				},
 				{
-					"Class": "AnimatedImageTrack",
-					"Member": "FrameCount",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
 					"Class": "AnimationPlayer",
 					"Member": "CurrentFrame",
 					"MemberType": "Property",
@@ -512543,6 +516617,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AvatarSettings",
+					"Member": "RulesSchemaVersion",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -516243,6 +520330,84 @@
 					}
 				},
 				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookSizeX",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FlipbookSizeY",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "ZIndex",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Emit",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FastForward",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "OnEmitRequested",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
 					"Class": "PartyEmulatorService",
 					"Member": "OnTestPlayerCountChanged",
 					"MemberType": "Function",
@@ -517173,6 +521338,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 3,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "ProjectService",
+					"Member": "ContentMapMutationResult",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -519885,19 +524063,6 @@
 				},
 				{
 					"Class": "TestCase",
-					"Member": "Require",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 3,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "int"
-					}
-				},
-				{
-					"Class": "TestCase",
 					"Member": "RequireLegacy",
 					"MemberType": "Function",
 					"Removed": false,
@@ -521763,6 +525928,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "FrameCount",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int"
@@ -526634,6 +530812,19 @@
 				},
 				{
 					"Class": "AvatarAccessoryRules",
+					"Member": "BackAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
 					"Member": "CustomBackAccessoryId",
 					"MemberType": "Property",
 					"Removed": false,
@@ -526726,6 +530917,110 @@
 				{
 					"Class": "AvatarAccessoryRules",
 					"Member": "CustomWaistAccessoryId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "FaceAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "FrontAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "HairAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "HeadAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "NeckAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "ShoulderAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAccessoryRules",
+					"Member": "WaistAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "ClimbAnimationOverride",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -526856,6 +531151,123 @@
 				{
 					"Class": "AvatarAnimationRules",
 					"Member": "CustomWalkAnimationId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "FallAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "IdleAltAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "IdleAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "JumpAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "MoodAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "RunAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "SwimAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "SwimIdleAnimationOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarAnimationRules",
+					"Member": "WalkAnimationOverride",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -527010,6 +531422,84 @@
 					}
 				},
 				{
+					"Class": "AvatarBodyRules",
+					"Member": "HeadOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "LeftArmOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "LeftLegOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "RightArmOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "RightLegOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarBodyRules",
+					"Member": "TorsoOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
 					"Class": "AvatarChatService",
 					"Member": "DebugCounterGet",
 					"MemberType": "Function",
@@ -527030,6 +531520,45 @@
 					"Field": "ReturnType",
 					"Kind": "Type",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ClassicPantsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ClassicShirtsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ClassicTShirtsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -527181,6 +531710,123 @@
 				{
 					"Class": "AvatarClothingRules",
 					"Member": "CustomTShirtAccessoryId",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "DressSkirtAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "JacketAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "LeftShoesAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "PantsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "RightShoesAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ShirtAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "ShortsAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "SweaterAccessoryOverride",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "AvatarClothingRules",
+					"Member": "TShirtAccessoryOverride",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -530807,6 +535453,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "GetPassOwnershipAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "GetProductInfo",
 					"MemberType": "Function",
 					"Removed": false,
@@ -531055,6 +535714,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "SignalClientPurchaseSuccess",
 					"MemberType": "Function",
 					"Removed": false,
@@ -531191,6 +535863,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "GamePassFreeTrialRedeemed",
+					"MemberType": "Event",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -535929,33 +540614,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "DestroyTrack",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "Prewarm",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "ReturnType",
-					"Kind": "Type",
-					"Index": 0,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "null"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "UnloadTracks",
+					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -542169,6 +546828,19 @@
 				},
 				{
 					"Class": "Humanoid",
+					"Member": "ApplyAvatarRulesAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Humanoid",
 					"Member": "ApplyDescription",
 					"MemberType": "Function",
 					"Removed": false,
@@ -543989,6 +548661,19 @@
 				},
 				{
 					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
 					"Member": "RefreshBulkPurchase",
 					"MemberType": "Function",
 					"Removed": false,
@@ -545132,6 +549817,45 @@
 					}
 				},
 				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Clear",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "Emit",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "ParticleEmitter2D",
+					"Member": "FastForward",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "PartyEmulatorService",
 					"Member": "DeleteParty",
 					"MemberType": "Function",
@@ -545666,7 +550390,7 @@
 				},
 				{
 					"Class": "Player",
-					"Member": "LoadCharacterWithAvatarRules",
+					"Member": "LoadCharacterWithAvatarRulesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -550008,6 +554732,19 @@
 				},
 				{
 					"Class": "SystemThemeService",
+					"Member": "setAppIcon",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "SystemThemeService",
 					"Member": "setClassicThemeActive",
 					"MemberType": "Function",
 					"Removed": false,
@@ -550711,6 +555448,19 @@
 				{
 					"Class": "TestCase",
 					"Member": "AssertLegacy",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "TestCase",
+					"Member": "Check",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "ReturnType",
@@ -553257,6 +558007,45 @@
 					}
 				},
 				{
+					"Class": "AnimatedImageService",
+					"Member": "DestroyTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "Prewarm",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "UnloadTracks",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
 					"Class": "AnimationNodeDefinition",
 					"Member": "SetInputPinNames",
 					"MemberType": "Function",
@@ -554780,6 +559569,19 @@
 				{
 					"Class": "Moderation",
 					"Member": "InternalRequestReviewableContentReviewAsync",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "ReturnType",
+					"Kind": "Type",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Class": "Player",
+					"Member": "LoadCharacterWithAvatarRules",
 					"MemberType": "Function",
 					"Removed": true,
 					"Field": "ReturnType",
@@ -556424,7 +561226,7 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "CreateTrack",
+					"Member": "AddAnimatedImageClipAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
@@ -556437,38 +561239,12 @@
 				},
 				{
 					"Class": "AnimatedImageService",
-					"Member": "DestroyTrack",
+					"Member": "GetAnimatedImageClipFramesAsync",
 					"MemberType": "Function",
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AnimatedImageService",
-					"Member": "GetTrack",
-					"MemberType": "Function",
-					"Removed": false,
-					"Field": "Parameters",
-					"Kind": "Parameter",
-					"Index": 1,
-					"Type": {
-						"Category": "Primitive",
-						"Name": "string"
-					}
-				},
-				{
-					"Class": "AnimatedImageTrack",
-					"Member": "TrackName",
-					"MemberType": "Property",
-					"Removed": false,
-					"Field": "ValueType",
-					"Kind": "Type",
-					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -557620,6 +562396,32 @@
 				},
 				{
 					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromUrlAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
+					"Member": "FetchAssetQualitySummaryFromUrlAsync",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetQualityService",
 					"Member": "FetchAssetQualityVisualizationDataFromUrlAsync",
 					"MemberType": "Function",
 					"Removed": false,
@@ -557730,6 +562532,19 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AssetService",
+					"Member": "FetchAssetWithFormat",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -558427,6 +563242,19 @@
 				{
 					"Class": "AudioSpeechToText",
 					"Member": "Text",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AudioSpeechToText",
+					"Member": "UsageType",
 					"MemberType": "Property",
 					"Removed": false,
 					"Field": "ValueType",
@@ -563181,6 +568009,19 @@
 					}
 				},
 				{
+					"Class": "FeatureMatchingTable",
+					"Member": "SchemaName",
+					"MemberType": "Property",
+					"Removed": false,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "File",
 					"Member": "GetBinaryContents",
 					"MemberType": "Function",
@@ -567925,6 +572766,32 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "MarketplaceService",
+					"Member": "RedeemGamePassFreeTrial",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 3,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -577833,6 +582700,19 @@
 					}
 				},
 				{
+					"Class": "SystemThemeService",
+					"Member": "setAppIcon",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 0,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
 					"Class": "TelemetryService",
 					"Member": "LogDurationEvent",
 					"MemberType": "Function",
@@ -578224,6 +583104,19 @@
 				},
 				{
 					"Class": "TestCase",
+					"Member": "Check",
+					"MemberType": "Function",
+					"Removed": false,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "TestCase",
 					"Member": "EndTest",
 					"MemberType": "Function",
 					"Removed": false,
@@ -578255,7 +583148,7 @@
 					"Removed": false,
 					"Field": "Parameters",
 					"Kind": "Parameter",
-					"Index": 1,
+					"Index": 2,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
@@ -583735,6 +588628,58 @@
 					"Field": "Parameters",
 					"Kind": "Parameter",
 					"Index": 2,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "CreateTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "DestroyTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageService",
+					"Member": "GetTrack",
+					"MemberType": "Function",
+					"Removed": true,
+					"Field": "Parameters",
+					"Kind": "Parameter",
+					"Index": 1,
+					"Type": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Class": "AnimatedImageTrack",
+					"Member": "TrackName",
+					"MemberType": "Property",
+					"Removed": true,
+					"Field": "ValueType",
+					"Kind": "Type",
+					"Index": -1,
 					"Type": {
 						"Category": "Primitive",
 						"Name": "string"
