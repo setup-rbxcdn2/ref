@@ -2460,7 +2460,7 @@
 			"Description": "<p>Represents a text chat channel. Contains <a href=\"/ref/class/TextSource.html\">TextSources</a> as\ndescendants.</p>\n<p>To send a chat message to the <a href=\"/ref/class/TextChannel.html\">TextChannel</a>, call\n<a href=\"/ref/class/TextChannel.html#member-SendAsync\">TextChannel:SendAsync()</a> from a <a href=\"/ref/class/LocalScript.html\">LocalScript</a>. The corresponding\n<a href=\"/ref/class/TextSource.html\">TextSource</a> of the user with <code>TextSource.CanSend = true</code> must be in\nthat channel.</p>\n<p>Messages from different TextChannels can be separated into different tabs in\nthe chat window using <a href=\"/ref/class/ChannelTabsConfiguration.html\">ChannelTabsConfiguration</a>. Multiple channels with\nthe same name might cause unexpected behavior with the chat window, even if\nthe player isn&#39;t a member of the other channels.</p>\n<p>To learn more, see\n<a href=\"https://create.roblox.com/docs/chat/in-experience-text-chat\">In-Experience Text Chat</a>.</p>\n"
 		},
 		"TextChannelWindow": {
-			"Description": "<p><a href=\"/ref/class/TextChannelWindow.html\">TextChannelWindow</a> is a <a href=\"/ref/class/GuiObject.html\">GuiObject</a> that renders in-experience\ntext chat messages from a linked <a href=\"/ref/class/TextChannel.html\">TextChannel</a>. Place it under a\n<a href=\"/ref/class/ScreenGui.html\">ScreenGui</a> or other <a href=\"/ref/class/LayerCollector.html\">LayerCollector</a> descendant to display chat\nin a custom location and layout.</p>\n<p>Set <a href=\"/ref/class/TextChannelWindow.html#member-Target\">Target</a> to a <a href=\"/ref/class/TextChannel.html\">TextChannel</a> to choose\nwhich channel&#39;s messages the window shows. The window registers itself with\n<a href=\"/ref/class/TextChatService.html\">TextChatService</a> when added to the data model.</p>\n<p>Accepted children: <a href=\"/ref/class/UICorner.html\">UICorner</a>, <a href=\"/ref/class/UIAspectRatioConstraint.html\">UIAspectRatioConstraint</a>,\n<a href=\"/ref/class/UISizeConstraint.html\">UISizeConstraint</a>, and scripts (<a href=\"/ref/class/LocalScript.html\">LocalScript</a>, <a href=\"/ref/class/Script.html\">Script</a>,\n<a href=\"/ref/class/ModuleScript.html\">ModuleScript</a>); other child types are rejected.</p>\n"
+			"Description": "<p><a href=\"/ref/class/TextChannelWindow.html\">TextChannelWindow</a> is a <a href=\"/ref/class/GuiObject.html\">GuiObject</a> that renders in-experience\ntext chat messages from a linked <a href=\"/ref/class/TextChannel.html\">TextChannel</a>. Place it under a\n<a href=\"/ref/class/ScreenGui.html\">ScreenGui</a> or other <a href=\"/ref/class/LayerCollector.html\">LayerCollector</a> descendant to display chat\nin a custom location and layout.</p>\n<p>Set <a href=\"/ref/class/TextChannelWindow.html#member-Target\">Target</a> to a <a href=\"/ref/class/TextChannel.html\">TextChannel</a> to choose\nwhich channel&#39;s messages the window shows. The window registers itself with\n<a href=\"/ref/class/TextChatService.html\">TextChatService</a> when added to the data model.</p>\n<p>Properties set on <a href=\"/ref/class/ChatWindowConfiguration.html\">ChatWindowConfiguration</a> do not apply to this window.</p>\n<p>Accepted children: <a href=\"/ref/class/UICorner.html\">UICorner</a>, <a href=\"/ref/class/UIAspectRatioConstraint.html\">UIAspectRatioConstraint</a>,\n<a href=\"/ref/class/UISizeConstraint.html\">UISizeConstraint</a>, and scripts (<a href=\"/ref/class/LocalScript.html\">LocalScript</a>, <a href=\"/ref/class/Script.html\">Script</a>,\n<a href=\"/ref/class/ModuleScript.html\">ModuleScript</a>); other child types are rejected.</p>\n"
 		},
 		"TextChatCommand": {
 			"Summary": "<p>Represents a text chat command.</p>\n",
@@ -2480,7 +2480,7 @@
 		},
 		"TextChatService": {
 			"Summary": "<p>A service handling in-experience text chat.</p>\n",
-			"Description": "<p>A service handling in-experience text chat, including managing\n<a href=\"/ref/class/TextChannel.html\">TextChannels</a>, decorating messages, filtering text,\ncreating <a href=\"/ref/class/TextChatCommand.html\">TextChatCommands</a>, and\n<a href=\"https://create.roblox.com/docs/chat/examples/simple-custom-frontend-ui\">developing custom chats interfaces</a>.\nTo learn more, see\n<a href=\"https://create.roblox.com/docs/chat/in-experience-text-chat\">text chat overview</a>.</p>\n<p>For further customization, <code>TextChatService</code> has the following singleton\nchildren:</p>\n<ul>\n<li><a href=\"/ref/class/ChatWindowConfiguration.html\">ChatWindowConfiguration</a></li>\n<li><a href=\"/ref/class/ChatInputBarConfiguration.html\">ChatInputBarConfiguration</a></li>\n<li><a href=\"/ref/class/BubbleChatConfiguration.html\">BubbleChatConfiguration</a></li>\n<li><a href=\"/ref/class/ChannelTabsConfiguration.html\">ChannelTabsConfiguration</a></li>\n</ul>\n"
+			"Description": "<p>A service handling in-experience text chat, including managing\n<a href=\"/ref/class/TextChannel.html\">TextChannels</a>, decorating messages, filtering text,\ncreating <a href=\"/ref/class/TextChatCommand.html\">TextChatCommands</a>, and\n<a href=\"https://create.roblox.com/docs/chat/examples/simple-custom-frontend-ui\">developing custom chats interfaces</a>.\nTo learn more, see\n<a href=\"https://create.roblox.com/docs/chat/in-experience-text-chat\">text chat overview</a>.</p>\n<p>For further customization, <code>TextChatService</code> has the following singleton\nchildren:</p>\n<ul>\n<li><a href=\"/ref/class/ChatWindowConfiguration.html\">ChatWindowConfiguration</a></li>\n<li><a href=\"/ref/class/ChatInputBarConfiguration.html\">ChatInputBarConfiguration</a></li>\n<li><a href=\"/ref/class/BubbleChatConfiguration.html\">BubbleChatConfiguration</a></li>\n<li><a href=\"/ref/class/ChannelTabsConfiguration.html\">ChannelTabsConfiguration</a></li>\n</ul>\n<p>To display content from a <a href=\"/ref/class/TextChannel.html\">TextChannel</a> in a custom location, place a\n<a href=\"/ref/class/TextChannelWindow.html\">TextChannelWindow</a> under a <a href=\"/ref/class/ScreenGui.html\">ScreenGui</a> or <a href=\"/ref/class/SurfaceGui.html\">SurfaceGui</a>.</p>\n"
 		},
 		"TextFilterResult": {
 			"Summary": "<p>Represents the result of a call to <a href=\"/ref/class/TextService.html#member-FilterStringAsync\">TextService:FilterStringAsync()</a>,\nused to distribute a filtered string accordingly.</p>\n",
@@ -4396,7 +4396,7 @@
 			},
 			"Volume": {
 				"Summary": "<p>Volume level which is multiplied onto the input stream.</p>\n",
-				"Description": "<p>Volume level which is multiplied onto the input stream. Ranges from 0\nto 3.</p>\n"
+				"Description": "<p>Volume level which is multiplied onto the input stream. Ranges from 0\nto 10.</p>\n"
 			},
 			"WiringChanged": {
 				"Summary": "<p>Fires when another instance is connected to or disconnected from the\n<a href=\"/ref/class/AudioFader.html\">AudioFader</a> via a <a href=\"/ref/class/Wire.html\">Wire</a>.</p>\n",
@@ -5153,6 +5153,10 @@
 					"AvatarCreationService-PromptCreateAvatarAsync"
 				]
 			},
+			"PromptCreateMakeupAsync": {
+				"Summary": "<p>Prompts a <a href=\"/ref/class/Player.html\">Player</a> to create and publish a makeup look from multiple\nmakeup assets.</p>\n",
+				"Description": "<p>Prompts a <a href=\"/ref/class/Player.html\">Player</a> to create and publish a makeup look from two to\nsix makeup assets. For example, an in-experience creation tool can use\nthis method to let a player publish lip and face makeup together as a\nsingle look. This method can only be called from the server and yields\nuntil the operation completes.</p>\n<p>Each asset requires a creation token for its asset type and the current\nexperience. See the\n<a href=\"https://create.roblox.com/docs/production/monetization/avatar-creation-token\">token creation</a>\nprocess. The input entries are checked before the prompt opens. Creation\ntoken and user-generated content validation run while the prompt is\nloading; the player can proceed with creation after validation succeeds.</p>\n<p>For <code>FaceMakeup</code>, <code>LipMakeup</code>, and <code>EyeMakeup</code>, the asset instance must be\na <a href=\"/ref/class/Decal.html\">Decal</a> whose <a href=\"/ref/class/Decal.html#member-TextureContent\">Decal.TextureContent</a> references an\n<a href=\"/ref/class/EditableImage.html\">EditableImage</a>, with exactly one <a href=\"/ref/class/WrapTextureTransfer.html\">WrapTextureTransfer</a> child.</p>\n<p>The overall <a href=\"/ref/enum/PromptCreateOutfitResult.html\">PromptCreateOutfitResult</a> describes creation of the\nlook:</p>\n<ul>\n<li><a href=\"/ref/enum/PromptCreateOutfitResult.html\">Success</a> means all submitted\nassets and the makeup look were created.</li>\n<li><a href=\"/ref/enum/PromptCreateOutfitResult.html\">PartialSuccess</a> means at\nleast one asset was created, but another asset or the makeup look\ncomposition failed. If the look was created, the second return value is\nits outfit ID; if composition failed, it is an error message instead.</li>\n<li><a href=\"/ref/enum/PromptCreateOutfitResult.html\">CreationFailure</a> means no\nassets were created, so no makeup look was created.</li>\n</ul>\n<p>Inspect the per-asset results to determine which assets were created. Each\nentry contains <a href=\"/ref/enum/PromptCreateAssetResult.html\">Success</a> and an asset\nID, or <a href=\"/ref/enum/PromptCreateAssetResult.html\">UploadFailed</a> without an\nasset ID. If a failure occurs before asset uploads, the results array may\nbe empty.</p>\n<p>For <a href=\"/ref/enum/PromptCreateOutfitResult.html\">PermissionDenied</a>,\n<a href=\"/ref/enum/PromptCreateOutfitResult.html\">Timeout</a>, and\n<a href=\"/ref/enum/PromptCreateOutfitResult.html\">NoUserInput</a>, only the result\nenum is returned; variables assigned to the other return values receive\n<code>nil</code>.</p>\n<p>This method can raise an error for invalid input, request throttling, or\nunexpected failures. Validation failures may raise an error or return\n<a href=\"/ref/enum/PromptCreateOutfitResult.html\">UGCValidationFailed</a>\nwith an error message and an empty per-asset results array. Use <code>pcall()</code>\nto handle errors as well as checking the returned result enum.</p>\n"
+			},
 			"PromptSelectAvatarGenerationImageAsync": {
 				"Summary": "<p>Prompt the <a href=\"/ref/class/Player.html\">Player</a> to take a selfie and return the FileId.</p>\n",
 				"Description": "<p>Prompt the <a href=\"/ref/class/Player.html\">Player</a> to take a selfie and return the FileId of the\nselfie. This FileId is then passed as an argument to\n<a href=\"/ref/class/AvatarCreationService.html#member-GenerateAvatar2DPreviewAsync\">GenerateAvatar2DPreviewAsync()</a>.\nThis API can only be used on the game server.</p>\n<div class=\"_chroma _light\">\n<table class=\"_lntable\"><tbody><tr><td class=\"_lntd\">\n<pre class=\"_chroma _light\"><span class=\"_lnt\"> 1\n</span><span class=\"_lnt\"> 2\n</span><span class=\"_lnt\"> 3\n</span><span class=\"_lnt\"> 4\n</span><span class=\"_lnt\"> 5\n</span><span class=\"_lnt\"> 6\n</span><span class=\"_lnt\"> 7\n</span><span class=\"_lnt\"> 8\n</span><span class=\"_lnt\"> 9\n</span><span class=\"_lnt\">10\n</span><span class=\"_lnt\">11\n</span><span class=\"_lnt\">12\n</span><span class=\"_lnt\">13\n</span><span class=\"_lnt\">14\n</span><span class=\"_lnt\">15\n</span><span class=\"_lnt\">16\n</span><span class=\"_lnt\">17\n</span><span class=\"_lnt\">18\n</span></pre></td>\n<td class=\"_lntd\">\n<pre class=\"_chroma _light\"><code><span class=\"_line\"><span class=\"_cl\"><span class=\"_kd\">local</span> <span class=\"_n\">AvatarCreationService</span> <span class=\"_o\">=</span> <span class=\"_n\">game</span><span class=\"_p\">:</span><span class=\"_n\">GetService</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;AvatarCreationService&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_kr\">function</span> <span class=\"_nf\">promptSelectAvatarGenerationImage</span><span class=\"_p\">(</span><span class=\"_n\">player</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">    <span class=\"_kd\">local</span> <span class=\"_n\">pcallSuccess</span><span class=\"_p\">,</span> <span class=\"_n\">result</span> <span class=\"_o\">=</span> <span class=\"_n\">pcall</span><span class=\"_p\">(</span><span class=\"_kr\">function</span><span class=\"_p\">()</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">        <span class=\"_kr\">return</span> <span class=\"_n\">AvatarCreationService</span><span class=\"_p\">:</span><span class=\"_n\">PromptSelectAvatarGenerationImageAsync</span><span class=\"_p\">(</span><span class=\"_n\">player</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">    <span class=\"_kr\">end</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\">    <span class=\"_kr\">if</span> <span class=\"_ow\">not</span> <span class=\"_n\">pcallSuccess</span> <span class=\"_kr\">then</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">        <span class=\"_n\">errName</span><span class=\"_p\">,</span> <span class=\"_n\">errDesc</span> <span class=\"_o\">=</span> <span class=\"_n\">unpack</span><span class=\"_p\">(</span><span class=\"_n\">string.split</span><span class=\"_p\">(</span><span class=\"_n\">result</span><span class=\"_p\">,</span> <span class=\"_s2\">&#34;: &#34;</span><span class=\"_p\">))</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">        <span class=\"_kr\">if</span> <span class=\"_n\">errName</span> <span class=\"_o\">==</span> <span class=\"_s2\">&#34;SelfieConsentDenied&#34;</span> <span class=\"_kr\">then</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">            <span class=\"_n\">warn</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Player must accept consent to use feature.&#34;</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">        <span class=\"_kr\">else</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">            <span class=\"_n\">warn</span><span class=\"_p\">(</span><span class=\"_s2\">&#34;Failed to prompt for image: &#34;</span><span class=\"_p\">,</span> <span class=\"_n\">errDesc</span><span class=\"_p\">)</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">        <span class=\"_kr\">end</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">    <span class=\"_kr\">end</span>\n</span></span><span class=\"_line\"><span class=\"_cl\">\n</span></span><span class=\"_line\"><span class=\"_cl\">    <span class=\"_kr\">return</span> <span class=\"_n\">result</span>\n</span></span><span class=\"_line\"><span class=\"_cl\"><span class=\"_kr\">end</span>\n</span></span></code></pre></td></tr></tbody></table>\n</div>\n<p>On failure, the result string has the format\n<code>ErrorName: Error description</code>, allowing the error type to be identified\nprogrammatically.</p>\n<table>\n<thead>\n  <tr>\n    <th>Error name</th>\n    <th>Error description</th>\n  </tr>\n</thead>\n<tbody>\n  <tr>\n    <td>`SelfieConsentDenied`</td>\n    <td>Selfie consent not accepted</td>\n  </tr>\n  <tr>\n    <td>`QRTooManyRequests`</td>\n    <td>Failure to generate QR url due to too many requests; please wait and try again later</td>\n  </tr>\n  <tr>\n    <td>`MediaPermissionsDenied`</td>\n    <td>Permissions not granted for taking photo</td>\n  </tr>\n  <tr>\n    <td>`FeatureUnavailable`</td>\n    <td>Feature not available for player</td>\n  </tr>\n  <tr>\n    <td>`GenerationInProgress`</td>\n    <td>Generation already in progress for player</td>\n  </tr>\n</tbody>\n</table>\n"
@@ -5396,7 +5400,7 @@
 			},
 			"GetBadgeInfoAsync": {
 				"Summary": "<p>Fetch information about a badge given its ID.</p>\n",
-				"Description": "<p>This method fetches information about a badge given its ID and returns a\ndictionary with the following fields:</p>\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Key</th>\n\t\t\t<th>Type</th>\n\t\t\t<th>Description</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><code>Name</code></td>\n\t\t\t<td>string</td>\n\t\t\t<td>The name of the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>Description</code></td>\n\t\t\t<td>string</td>\n\t\t\t<td>The description of the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>IconImageId</code></td>\n\t\t\t<td>int64</td>\n\t\t\t<td>The asset ID of the image for the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>IsEnabled</code></td>\n\t\t\t<td>boolean</td>\n\t\t\t<td>Indicates whether the badge is available to be awarded.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<p>This method takes a brief moment to load the information from Roblox;\nrepeated calls will cache for a short duration.</p>\n",
+				"Description": "<p>This method fetches information about a badge given its ID and returns a\ndictionary with the following fields:</p>\n<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>Key</th>\n\t\t\t<th>Type</th>\n\t\t\t<th>Description</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><code>Name</code></td>\n\t\t\t<td>string</td>\n\t\t\t<td>The name of the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>Description</code></td>\n\t\t\t<td>string</td>\n\t\t\t<td>The description of the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>IconImageId</code></td>\n\t\t\t<td>int64</td>\n\t\t\t<td>The asset ID of the image for the badge.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>IsEnabled</code></td>\n\t\t\t<td>boolean</td>\n\t\t\t<td>Indicates whether the badge is available to be awarded.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>AwardCount</code></td>\n\t\t\t<td>int64</td>\n\t\t\t<td>The total number of times the badge has been awarded.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>PastDayAwardCount</code></td>\n\t\t\t<td>int64</td>\n\t\t\t<td>The number of times the badge was awarded in the past day.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><code>Rarity</code></td>\n\t\t\t<td>number</td>\n\t\t\t<td>The rarity of the badge as a value from 0.0 (0%) to 1.0 (100%), representing the percentage of players who earned the badge in the past day.</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<p>This method takes a brief moment to load the information from Roblox;\nrepeated calls will cache for a short duration.</p>\n",
 				"CodeSamples": [
 					"getbadgeinfoasync"
 				]
@@ -7211,7 +7215,7 @@
 			},
 			"FontFace": {
 				"Summary": "<p>Font used to render text in the default chat input bar.</p>\n",
-				"Description": "<p>Font used to render text in the default chat input bar. Default is\n<a href=\"/ref/enum/Font.html\">Font.BuilderSansMedium</a>.</p>\n"
+				"Description": "<p>Font used to render text in the default chat input bar. Default is\n<a href=\"/ref/enum/Font.html\">Font.BuilderSansMedium</a>. Does not apply to <a href=\"/ref/class/TextChannelWindow.html\">TextChannelWindow</a>\ninstances.</p>\n"
 			},
 			"IsFocused": {
 				"Summary": "<p>Whether the default chat input bar is focused or not.</p>\n",
@@ -7284,7 +7288,7 @@
 			},
 			"FontFace": {
 				"Summary": "<p>Font used to render text in the default chat window.</p>\n",
-				"Description": "<p>Font used to render text in the default chat window. Default is\n<a href=\"/ref/enum/Font.html\">Font.BuilderSansMedium</a>.</p>\n"
+				"Description": "<p>Font used to render text in the default chat window. Default is\n<a href=\"/ref/enum/Font.html\">Font.BuilderSansMedium</a>. Does not apply to\n<a href=\"/ref/class/TextChannelWindow.html\">TextChannelWindow</a>.</p>\n"
 			},
 			"HeightScale": {
 				"Summary": "<p>Factor by which the height of the default chat window should be scaled.</p>\n",
@@ -23026,8 +23030,22 @@
 			}
 		},
 		"TextChannelWindow": {
+			"FontFace": {
+				"Summary": "<p>Font used to render text in this window.</p>\n",
+				"Description": "<p>Font used to render this window&#39;s messages and its input bar. Applied only\nwhen <a href=\"/ref/class/TextChannelWindow.html#member-UseDefaultFont\">TextChannelWindow.UseDefaultFont</a> is <code>false</code>.</p>\n",
+				"CodeSamples": [
+					"TextChannelWindow-FontFace"
+				]
+			},
 			"Target": {
 				"Description": "<p>A reference to the <a href=\"/ref/class/TextChannel.html\">TextChannel</a> whose messages this window renders.\nWhen set, the window shows messages from the specified channel. Setting\nthis property to <code>nil</code> disconnects the window from any channel so it\ndisplays no messages.</p>\n<p>The default value is <code>nil</code> (no channel linked).</p>\n"
+			},
+			"UseDefaultFont": {
+				"Summary": "<p>Whether this window uses the live platform default font.</p>\n",
+				"Description": "<p>When <code>true</code> (default), the window uses the live platform default font.\nWhen <code>false</code>, the window uses <a href=\"/ref/class/TextChannelWindow.html#member-FontFace\">FontFace</a>.</p>\n",
+				"CodeSamples": [
+					"TextChannelWindow-FontFace"
+				]
 			}
 		},
 		"TextChatCommand": {
@@ -26387,6 +26405,10 @@
 			"Summary": "<p>Enum which determines how detailed audio simulation should be for\n<a href=\"/ref/class/AudioEmitter.html\">AudioEmitters</a> and <a href=\"/ref/class/AudioListener.html\">AudioListeners</a>.</p>\n",
 			"Description": "<p>This enum, used with <a href=\"/ref/class/AudioEmitter.html#member-SimulationFidelity\">AudioEmitter.SimulationFidelity</a> and\n<a href=\"/ref/class/AudioListener.html#member-SimulationFidelity\">AudioListener.SimulationFidelity</a>, determines how detailed audio\nsimulation should be.</p>\n"
 		},
+		"AudioSortType": {
+			"Summary": "<p>The ordering of audio search results.</p>\n",
+			"Description": "<p>The ordering of audio search results, used by\n<a href=\"/ref/class/AudioSearchParams.html#member-SortType\">AudioSearchParams.SortType</a>.</p>\n"
+		},
 		"AudioSubType": {
 			"Summary": "<p>The categorization of an audio asset.</p>\n",
 			"Description": "<p>The categorization of an audio asset between music and sound effects. This\ncategorization is used for filtering audio in <a href=\"/ref/class/AudioSearchParams.html\">AudioSearchParams</a>.</p>\n"
@@ -27542,6 +27564,10 @@
 		"PromptCreateAvatarResult": {
 			"Summary": "<p>Result codes returned by\n<a href=\"/ref/class/AvatarCreationService.html#member-PromptCreateAvatarAsync\">AvatarCreationService:PromptCreateAvatarAsync()</a> indicating whether\navatar creation succeeded or why it failed.</p>\n",
 			"Description": "<p>Result codes returned by\n<a href=\"/ref/class/AvatarCreationService.html#member-PromptCreateAvatarAsync\">AvatarCreationService:PromptCreateAvatarAsync()</a> to indicate the\noutcome of an in-experience avatar creation flow. A value of\n<a href=\"/ref/enum/PromptCreateAvatarResult.html\">PromptCreateAvatarResult.Success</a> means the avatar was created and\npublished; all other values identify the failure reason so the experience can\nsurface an appropriate message to the player.</p>\n"
+		},
+		"PromptCreateOutfitResult": {
+			"Summary": "<p>Result codes returned by\n<a href=\"/ref/class/AvatarCreationService.html#member-PromptCreateMakeupAsync\">AvatarCreationService:PromptCreateMakeupAsync()</a> that describe the\noverall makeup look creation outcome.</p>\n",
+			"Description": "<p>Result codes returned by\n<a href=\"/ref/class/AvatarCreationService.html#member-PromptCreateMakeupAsync\">PromptCreateMakeupAsync()</a>.\nUse this enum for the overall creation outcome. For a\n<a href=\"/ref/enum/PromptCreateOutfitResult.html\">PartialSuccess</a> result, inspect\nthe method&#39;s per-asset results to determine which submitted assets were\ncreated. Partial success does not guarantee that the makeup look itself was\ncreated.</p>\n"
 		},
 		"PromptExperienceDetailsResult": {
 			"Summary": "<p>Indicates how the player dismissed the experience details prompt shown by\n<a href=\"/ref/class/TeleportService.html#member-PromptExperienceDetailsAsync\">TeleportService:PromptExperienceDetailsAsync()</a>.</p>\n",
@@ -29195,6 +29221,26 @@
 				"Summary": "<p>No acoustic simulation occurs; only direction and distance are taken into\naccount.</p>\n"
 			}
 		},
+		"AudioSortType": {
+			"LongestToShortest": {
+				"Summary": "<p>Orders results by duration, from longest to shortest.</p>\n"
+			},
+			"MostUsed": {
+				"Summary": "<p>Orders results from most used to least used.</p>\n"
+			},
+			"RecentlyCreated": {
+				"Summary": "<p>Orders results from newest to oldest.</p>\n"
+			},
+			"Relevance": {
+				"Summary": "<p>Orders results by relevance to the search keyword.</p>\n"
+			},
+			"ShortestToLongest": {
+				"Summary": "<p>Orders results by duration, from shortest to longest.</p>\n"
+			},
+			"Trending": {
+				"Summary": "<p>Orders results from most trending to least trending.</p>\n"
+			}
+		},
 		"AudioSubType": {
 			"Music": {
 				"Summary": "<p>Represents an asset which contains music.</p>\n"
@@ -29586,13 +29632,16 @@
 		},
 		"AvatarUnificationMode": {
 			"Default": {
-				"Summary": "<p>Resolves to the engine&#39;s current built-in default for avatar unification,\nwhich currently behaves the same as <code>Disabled</code>.</p>\n"
+				"Summary": "<p>Resolves to the engine&#39;s current built-in default for avatar unification,\nwhich currently behaves the same as <code>Disabled</code>.</p>\n",
+				"DeprecationMessage": "<p><a href=\"/ref/class/Workspace.html#member-AvatarUnificationMode\">Workspace.AvatarUnificationMode</a> no longer has an effect; R6\navatars always load as R6 rigs.</p>\n"
 			},
 			"Disabled": {
-				"Summary": "<p>Disables the R6-to-R15 adapter; R6 avatars in an R6 experience load using\nthe standard R6 rig with no adapter parts applied.</p>\n"
+				"Summary": "<p>Disables the R6-to-R15 adapter; R6 avatars in an R6 experience load using\nthe standard R6 rig with no adapter parts applied.</p>\n",
+				"DeprecationMessage": "<p><a href=\"/ref/class/Workspace.html#member-AvatarUnificationMode\">Workspace.AvatarUnificationMode</a> no longer has an effect; R6\navatars always load as R6 rigs.</p>\n"
 			},
 			"Enabled": {
-				"Summary": "<p>Enables the R6-to-R15 adapter; R6 avatars joining an R6 experience receive\ninvisible R15 adapter <a href=\"/ref/class/MeshPart.html\">MeshParts</a> welded to their R6-named\njoints, preserving R6 scale while enabling R15 features such as layered\nclothing and animatable heads.</p>\n"
+				"Summary": "<p>Enables the R6-to-R15 adapter; R6 avatars joining an R6 experience receive\ninvisible R15 adapter <a href=\"/ref/class/MeshPart.html\">MeshParts</a> welded to their R6-named\njoints, preserving R6 scale while enabling R15 features such as layered\nclothing and animatable heads.</p>\n",
+				"DeprecationMessage": "<p><a href=\"/ref/class/Workspace.html#member-AvatarUnificationMode\">Workspace.AvatarUnificationMode</a> no longer has an effect; R6\navatars always load as R6 rigs.</p>\n"
 			}
 		},
 		"Axis": {
@@ -34894,6 +34943,32 @@
 			},
 			"UploadFailed": {
 				"Summary": "<p>The avatar assets passed validation but the server-side upload or bundle\ncreation step failed.</p>\n"
+			}
+		},
+		"PromptCreateOutfitResult": {
+			"CreationFailure": {
+				"Summary": "<p>No makeup assets could be created, so the makeup look was not created.</p>\n"
+			},
+			"NoUserInput": {
+				"Summary": "<p>The player did not respond to the makeup creation prompt.</p>\n"
+			},
+			"PartialSuccess": {
+				"Summary": "<p>At least one makeup asset was created, but one or more assets or the final\nmakeup look composition did not succeed.</p>\n"
+			},
+			"PermissionDenied": {
+				"Summary": "<p>The player declined the makeup creation prompt.</p>\n"
+			},
+			"Success": {
+				"Summary": "<p>All submitted makeup assets and the makeup look were created successfully.</p>\n"
+			},
+			"Timeout": {
+				"Summary": "<p>The makeup creation prompt timed out before the player responded.</p>\n"
+			},
+			"UGCValidationFailed": {
+				"Summary": "<p>The makeup assets or creation tokens failed validation before upload.</p>\n"
+			},
+			"UnknownFailure": {
+				"Summary": "<p>An unexpected or unclassified error prevented makeup look creation.</p>\n"
 			}
 		},
 		"PromptExperienceDetailsResult": {
