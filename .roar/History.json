@@ -1495,6 +1495,9 @@
 			"FeatureRestrictionManager": [
 				30755
 			],
+			"FeatureSearchParams": [
+				40855
+			],
 			"FeedPages": [
 				32113,
 				32819
@@ -2590,6 +2593,9 @@
 			],
 			"PlaceAssetIdsService": [
 				32126
+			],
+			"PlaceSettings": [
+				40910
 			],
 			"PlaceStatsService": [
 				26137
@@ -4258,7 +4264,8 @@
 				39613
 			],
 			"WrapDeformMeshProvider": [
-				35903
+				35903,
+				40964
 			],
 			"WrapDeformer": [
 				29132,
@@ -4465,6 +4472,9 @@
 				],
 				"HasAchieved": [
 					29075
+				],
+				"IsAchievementAvailable": [
+					40832
 				],
 				"IsAvailable": [
 					29076
@@ -5212,9 +5222,13 @@
 					39677,
 					40129
 				],
+				"UserCreatedClips": [
+					40833
+				],
 				"UserCreatedTracks": [
 					39957,
-					40498
+					40498,
+					40834
 				]
 			},
 			"AnimatedImageTrack": {
@@ -5488,7 +5502,9 @@
 				"NodeId": [
 					34508,
 					34799,
-					35052
+					35052,
+					40835,
+					40836
 				],
 				"NodeType": [
 					34142
@@ -5533,6 +5549,12 @@
 				"Ended": [
 					40733
 				],
+				"GetParameter": [
+					40839
+				],
+				"GetParameterDefaults": [
+					40840
+				],
 				"IsPlaying": [
 					39965,
 					40510,
@@ -5545,11 +5567,20 @@
 					40514,
 					40732
 				],
+				"Parameters": [
+					40837
+				],
+				"ParametersSerialize": [
+					40838
+				],
 				"Pause": [
 					39970
 				],
 				"Play": [
 					39971
+				],
+				"SetParameter": [
+					40841
 				],
 				"Speed": [
 					39967,
@@ -5606,7 +5637,8 @@
 					38605
 				],
 				"LoadFromHumanoid": [
-					18277
+					18277,
+					40842
 				],
 				"LoadFromModel": [
 					33012,
@@ -5871,7 +5903,9 @@
 			},
 			"AnimationValueNodeDefinition": {
 				"NodeId": [
-					39687
+					39687,
+					40843,
+					40844
 				],
 				"NodeType": [
 					39688
@@ -6983,6 +7017,9 @@
 					18670,
 					20462
 				],
+				"PickAnimatedImageFileWithPromptAsync": [
+					40845
+				],
 				"PickFileWithPrompt": [
 					20373,
 					29495
@@ -6998,6 +7035,9 @@
 				],
 				"PickMultipleFilesWithPrompt": [
 					24137
+				],
+				"PickTextDocumentFileWithPromptAsync": [
+					40846
 				],
 				"ProgressUpdate": [
 					18795,
@@ -12756,7 +12796,8 @@
 					21319
 				],
 				"siz": [
-					21316
+					21316,
+					40847
 				],
 				"size": [
 					21317
@@ -19668,12 +19709,14 @@
 				"DrawCircle": [
 					27649,
 					29040,
-					37267
+					37267,
+					40848
 				],
 				"DrawImage": [
 					27650,
 					30053,
-					31904
+					31904,
+					40849
 				],
 				"DrawImageProjected": [
 					30323,
@@ -19687,7 +19730,8 @@
 				"DrawLine": [
 					27651,
 					29041,
-					37268
+					37268,
+					40850
 				],
 				"DrawProjectionImage": [
 					28448,
@@ -19696,7 +19740,8 @@
 				],
 				"DrawRectangle": [
 					27652,
-					29042
+					29042,
+					40851
 				],
 				"DrawTriangle": [
 					29660
@@ -21412,6 +21457,9 @@
 				]
 			},
 			"FeatureMatchingService": {
+				"CreateSearchParams": [
+					40852
+				],
 				"CreateTable": [
 					40774
 				],
@@ -21446,6 +21494,12 @@
 				],
 				"GetTagColumns": [
 					40785
+				],
+				"Search": [
+					40853
+				],
+				"SearchBatch": [
+					40854
 				],
 				"StandardizeQuery": [
 					40786
@@ -21494,6 +21548,62 @@
 					33412,
 					33993,
 					37160
+				]
+			},
+			"FeatureSearchParams": {
+				"AnchorCostScale": [
+					40856
+				],
+				"AnchorIgnoresTagFilters": [
+					40857
+				],
+				"AnchorRow": [
+					40858
+				],
+				"GetChannelWeights": [
+					40866
+				],
+				"GetCostBiases": [
+					40867
+				],
+				"GetFilters": [
+					40868
+				],
+				"GetReturnedFields": [
+					40869
+				],
+				"MaxDistance": [
+					40859
+				],
+				"MaxResults": [
+					40860
+				],
+				"NormalizationKey": [
+					40861
+				],
+				"ReturnChannelCosts": [
+					40862
+				],
+				"SelectionMode": [
+					40863
+				],
+				"SelectionSeed": [
+					40864
+				],
+				"SelectionTemperature": [
+					40865
+				],
+				"SetChannelWeights": [
+					40870
+				],
+				"SetCostBiases": [
+					40871
+				],
+				"SetFilters": [
+					40872
+				],
+				"SetReturnedFields": [
+					40873
 				]
 			},
 			"FeedService": {
@@ -21925,53 +22035,88 @@
 			},
 			"FriendsCallingInstance": {
 				"CallId": [
-					39840
+					39840,
+					40874,
+					40875
 				],
 				"ConversationId": [
-					39841
+					39841,
+					40876,
+					40877
 				],
 				"EndReason": [
-					39842
+					39842,
+					40878,
+					40879
 				],
 				"InitiatorUserId": [
-					39843
+					39843,
+					40880,
+					40881
 				],
 				"IsDeafened": [
-					39844
+					39844,
+					40882,
+					40883
 				],
 				"Phase": [
-					39845
+					39845,
+					40884,
+					40885
 				],
 				"Volume": [
-					39846
+					39846,
+					40886,
+					40887
 				]
 			},
 			"FriendsCallingParticipant": {
 				"Error": [
-					39848
+					39848,
+					40888,
+					40889
 				],
 				"IsLocalMuted": [
-					39849
+					39849,
+					40890,
+					40891
 				],
 				"IsSpeaking": [
-					39850
+					39850,
+					40892,
+					40893
 				],
 				"LeaveReason": [
-					39851
+					39851,
+					40894,
+					40895
 				],
 				"Status": [
-					39852
+					39852,
+					40896,
+					40897
 				],
 				"UserId": [
-					39853
+					39853,
+					40898,
+					40899
 				],
 				"Volume": [
-					39854
+					39854,
+					40900,
+					40901
 				]
 			},
 			"FriendsCallingService": {
+				"AnswerCall": [
+					40902
+				],
 				"EndCall": [
-					39984
+					39984,
+					40903
+				],
+				"ReceiveCall": [
+					40904
 				],
 				"SetMuted": [
 					39985
@@ -22160,7 +22305,8 @@
 				],
 				"EnableGamepadCursor": [
 					19320,
-					24832
+					24832,
+					40905
 				],
 				"GamepadCursorEnabled": [
 					10605,
@@ -22333,6 +22479,9 @@
 					26509,
 					27091,
 					27092
+				],
+				"SplitApartAsync": [
+					40906
 				],
 				"StitchMeshesAsync": [
 					27396,
@@ -23513,6 +23662,9 @@
 					39239,
 					39590
 				],
+				"GetUIScaleOptions": [
+					40907
+				],
 				"GetUiMessage": [
 					4604,
 					12511
@@ -24221,6 +24373,9 @@
 			"HapticEffect": {
 				"Ended": [
 					33594
+				],
+				"GetWaveformKeys": [
+					40908
 				],
 				"Looped": [
 					29305
@@ -28330,6 +28485,9 @@
 				"GetLayoutNodeTree": [
 					10699,
 					12901
+				],
+				"InputSinkEnabled": [
+					40909
 				],
 				"ResetOnSpawn": [
 					7553,
@@ -34747,6 +34905,17 @@
 					22576
 				]
 			},
+			"PlaceSettings": {
+				"GetActiveRollouts": [
+					40911
+				],
+				"GetRolloutState": [
+					40912
+				],
+				"SetRolloutState": [
+					40913
+				]
+			},
 			"PlacesService": {
 				"StartPlaySolo": [
 					26139
@@ -35067,7 +35236,8 @@
 					23821
 				],
 				"DeviceTrustLevel": [
-					40799
+					40799,
+					40914
 				],
 				"DeviceTrustLevelReplicated": [
 					40801
@@ -40778,6 +40948,9 @@
 				]
 			},
 			"ScriptEditorService": {
+				"ActiveScriptDocumentChanged": [
+					40918
+				],
 				"ClearUriScript": [
 					39068
 				],
@@ -40799,6 +40972,9 @@
 				"ForceReloadSource": [
 					24447,
 					25235
+				],
+				"GetActiveScriptDocument": [
+					40915
 				],
 				"GetEditorSource": [
 					25706
@@ -40824,8 +41000,12 @@
 					39409,
 					40807
 				],
+				"OpenTextDocumentAsync": [
+					40916
+				],
 				"OpenTextDocumentDocumentAsync": [
-					40808
+					40808,
+					40917
 				],
 				"RegisterAutocompleteCallback": [
 					20703,
@@ -41338,8 +41518,14 @@
 				"DeserializeInstancesAsync": [
 					31996
 				],
+				"DeserializeValue": [
+					40919
+				],
 				"SerializeInstancesAsync": [
 					31997
+				],
+				"SerializeValue": [
+					40920
 				]
 			},
 			"ServerReplicator": {
@@ -42915,7 +43101,9 @@
 				],
 				"DefaultListenerLocation": [
 					29844,
-					38565
+					38565,
+					40921,
+					40922
 				],
 				"DeviceListChanged": [
 					15396
@@ -42967,7 +43155,8 @@
 					40690
 				],
 				"GetInputDevice": [
-					21000
+					21000,
+					40923
 				],
 				"GetInputDevices": [
 					21001
@@ -43998,7 +44187,9 @@
 					39771
 				],
 				"TransitionId": [
-					39772
+					39772,
+					40924,
+					40925
 				]
 			},
 			"Stats": {
@@ -45928,7 +46119,8 @@
 					23249,
 					30706,
 					38444,
-					38445
+					38445,
+					40926
 				],
 				"ThemeChanged": [
 					8076,
@@ -46723,7 +46915,8 @@
 					14141,
 					19298,
 					20923,
-					29314
+					29314,
+					40927
 				],
 				"GridSize": [
 					9340,
@@ -47893,7 +48086,9 @@
 				"ReservedServerAccessCode": [
 					11413,
 					14215,
-					17337
+					17337,
+					40928,
+					40929
 				],
 				"ReservedServerId": [
 					39814
@@ -47912,7 +48107,9 @@
 					11415,
 					14217,
 					17339,
-					23308
+					23308,
+					40930,
+					40931
 				],
 				"VipServerId": [
 					39815
@@ -47996,12 +48193,15 @@
 					34938,
 					34939,
 					35227,
-					35228
+					35228,
+					40932
 				],
 				"ReserveServerAsync": [
 					34685,
 					34940,
-					35229
+					35229,
+					40933,
+					40934
 				],
 				"SendVIPData": [
 					26780
@@ -48220,7 +48420,8 @@
 					9500,
 					14237,
 					17341,
-					23316
+					23316,
+					40935
 				],
 				"Destroy": [
 					2144,
@@ -48323,7 +48524,8 @@
 				],
 				"GrassLength": [
 					26839,
-					28779
+					28779,
+					40936
 				],
 				"GridBackendReloadRequired": [
 					39601
@@ -48847,7 +49049,8 @@
 					40030
 				],
 				"GetContext": [
-					40031
+					40031,
+					40937
 				],
 				"GetExpected": [
 					40032
@@ -49948,7 +50151,8 @@
 					26842,
 					27249,
 					27250,
-					27251
+					27251,
+					40938
 				],
 				"ChatTranslationFTUXShown": [
 					27252
@@ -49994,13 +50198,15 @@
 					19439,
 					19502,
 					19503,
-					23414
+					23414,
+					40939
 				],
 				"CreateDefaultTextChannels": [
 					19440,
 					19504,
 					19505,
-					23415
+					23415,
+					40940
 				],
 				"DisplayBubble": [
 					25971
@@ -52109,11 +52315,13 @@
 				],
 				"Scale": [
 					38584,
-					39086
+					39086,
+					40941
 				],
 				"TileMode": [
 					38585,
-					39087
+					39087,
+					40942
 				],
 				"Transparency": [
 					9534,
@@ -52123,7 +52331,8 @@
 				],
 				"Type": [
 					38586,
-					39088
+					39088,
+					40943
 				]
 			},
 			"UIGridLayout": {
@@ -55735,7 +55944,9 @@
 					34944,
 					34945,
 					35233,
-					35234
+					35234,
+					40944,
+					40945
 				],
 				"AutoJointsMode": [
 					7968,
@@ -55947,6 +56158,9 @@
 				"ImprovedPhysicsReplication": [
 					38113
 				],
+				"InputSinkEnabled": [
+					40946
+				],
 				"InsertContent": [
 					1375,
 					4427
@@ -56025,11 +56239,17 @@
 					27261,
 					27421
 				],
+				"NextGenerationPhysicsSolver": [
+					40947
+				],
 				"NextGenerationReplication": [
 					34452
 				],
 				"NextGenerationReplicationAlias": [
 					36763
+				],
+				"NextGenerationReplicationStorage": [
+					40948
 				],
 				"PGSIsEnabled": [
 					5185,
@@ -56040,6 +56260,9 @@
 				"PGSPhysicsSolverEnabled": [
 					7969,
 					8834
+				],
+				"ParticlesUseDynamicWind": [
+					40949
 				],
 				"PathfindingUseImprovedSearch": [
 					29444,
@@ -56083,11 +56306,16 @@
 				"PlayerScriptsUseInputActionSystemAlias": [
 					36764
 				],
+				"PlayerScriptsUseInputActionSystemStorage": [
+					40950
+				],
 				"PredictiveStreamingMode": [
-					38782
+					38782,
+					40951
 				],
 				"PrimalPhysicsSolver": [
-					27422
+					27422,
+					40952
 				],
 				"RejectCharacterDeletions": [
 					23908,
@@ -56173,13 +56401,17 @@
 				"SignalBehaviorAlias": [
 					36765
 				],
+				"SignalBehaviorStorage": [
+					40953
+				],
 				"SkinnedMeshEnabled": [
 					10305,
 					10389
 				],
 				"StreamOutBehavior": [
 					18222,
-					23734
+					23734,
+					40954
 				],
 				"StreamingAdaptiveRadius": [
 					39716
@@ -56202,14 +56434,16 @@
 				],
 				"StreamingIntegrityMode": [
 					20555,
-					23736
+					23736,
+					40955
 				],
 				"StreamingMinRadius": [
 					8550,
 					14762,
 					17665,
 					18224,
-					23737
+					23737,
+					40956
 				],
 				"StreamingPauseMode": [
 					9031,
@@ -56225,7 +56459,8 @@
 					14764,
 					17667,
 					18226,
-					23739
+					23739,
+					40957
 				],
 				"TemporaryLegacyPhysicsSolverOverride": [
 					7970,
@@ -56274,13 +56509,17 @@
 				"UseFixedSimulationAlias": [
 					36768
 				],
+				"UseFixedSimulationStorage": [
+					40958
+				],
 				"UseImprovedModelLod": [
 					32844,
 					33528,
 					33939
 				],
 				"UseInputSink": [
-					39606
+					39606,
+					40959
 				],
 				"UseNewLuauTypeSolver": [
 					32801,
@@ -56347,7 +56586,8 @@
 				"Blockcast": [
 					24451,
 					24586,
-					29318
+					29318,
+					40960
 				],
 				"BulkMoveTo": [
 					10237,
@@ -56508,7 +56748,8 @@
 					17671,
 					19302,
 					20935,
-					29319
+					29319,
+					40961
 				],
 				"RaycastCachedTerrain": [
 					21083,
@@ -56531,7 +56772,8 @@
 				"Shapecast": [
 					27868,
 					29321,
-					40456
+					40456,
+					40962
 				],
 				"Simulate": [
 					39612
@@ -56542,7 +56784,8 @@
 				"Spherecast": [
 					24452,
 					24587,
-					29322
+					29322,
+					40963
 				],
 				"StepPhysics": [
 					28484,
@@ -57566,11 +57809,17 @@
 			"FeatureChannelEncoding": [
 				40471
 			],
+			"FeatureMatchingSource": [
+				40966
+			],
 			"FeatureNormalization": [
 				40474
 			],
 			"FeatureRestrictionAbuseVector": [
 				33454
+			],
+			"FeatureSelectionMode": [
+				40970
 			],
 			"FeedRankingScoreType": [
 				32200,
@@ -58276,7 +58525,8 @@
 				36944
 			],
 			"PrimalPhysicsSolver": [
-				27628
+				27628,
+				40974
 			],
 			"PrimitiveType": [
 				26861
@@ -58568,6 +58818,9 @@
 			],
 			"SensorUpdateType": [
 				24294
+			],
+			"SerializationFormat": [
+				40975
 			],
 			"ServerAudioBehavior": [
 				8007,
@@ -60006,6 +60259,9 @@
 			"AnimationValueNodeType": {
 				"Expression": [
 					39729
+				],
+				"FeatureMatching": [
+					40965
 				],
 				"Invalid": [
 					39730
@@ -65386,6 +65642,17 @@
 					40473
 				]
 			},
+			"FeatureMatchingSource": {
+				"Continuity": [
+					40967
+				],
+				"Ignore": [
+					40968
+				],
+				"Input": [
+					40969
+				]
+			},
 			"FeatureNormalization": {
 				"None": [
 					40475
@@ -65403,6 +65670,14 @@
 				],
 				"ExperienceChat": [
 					33456
+				]
+			},
+			"FeatureSelectionMode": {
+				"Nearest": [
+					40971
+				],
+				"WeightedRandom": [
+					40972
 				]
 			},
 			"FeedRankingScoreType": {
@@ -65564,7 +65839,8 @@
 					26268
 				],
 				"Experimental": [
-					26269
+					26269,
+					40973
 				]
 			},
 			"Font": {
@@ -72421,13 +72697,16 @@
 			},
 			"PrimalPhysicsSolver": {
 				"Default": [
-					27629
+					27629,
+					40974
 				],
 				"Disabled": [
-					27630
+					27630,
+					40974
 				],
 				"Experimental": [
-					27631
+					27631,
+					40974
 				]
 			},
 			"PrimitiveType": {
@@ -74389,6 +74668,17 @@
 				],
 				"OnRead": [
 					24296
+				]
+			},
+			"SerializationFormat": {
+				"Binary": [
+					40976
+				],
+				"Json": [
+					40977
+				],
+				"Luau": [
+					40978
 				]
 			},
 			"ServerAudioBehavior": {
@@ -88983,6 +89273,127 @@
 						"Category": "Group",
 						"Name": "Array"
 					}
+				},
+				{
+					"Change": 40854,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40854,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40854,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40867,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40869,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40871,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40873,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40906,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40906,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40908,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
+				},
+				{
+					"Change": 40911,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Array"
+					}
 				}
 			],
 			"AssetContentMap": [
@@ -90092,6 +90503,39 @@
 				},
 				{
 					"Change": 39957,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Change": 40833,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Change": 40834,
+					"Prev": true,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					}
+				},
+				{
+					"Change": 40838,
 					"Prev": false,
 					"Field": "ValueType",
 					"Type": "Type",
@@ -94946,6 +95390,28 @@
 						"Category": "DataType",
 						"Name": "CFrame"
 					}
+				},
+				{
+					"Change": 40960,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
+				},
+				{
+					"Change": 40960,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "CFrame"
+					}
 				}
 			],
 			"CSGPropertyData": [
@@ -97462,6 +97928,72 @@
 					"Field": "ValueType",
 					"Type": "Type",
 					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 40848,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 40848,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 40850,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 40850,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 40851,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Color3"
+					}
+				},
+				{
+					"Change": 40851,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
 					"Value": {
 						"Category": "DataType",
 						"Name": "Color3"
@@ -104514,6 +105046,30 @@
 				},
 				{
 					"Change": 40456,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "DataType",
+						"Name": "CoordinateFrame",
+						"Optional": true
+					}
+				},
+				{
+					"Change": 40962,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "DataType",
+						"Name": "CoordinateFrame",
+						"Optional": true
+					}
+				},
+				{
+					"Change": 40962,
 					"Prev": false,
 					"Field": "Parameters",
 					"Type": "Parameter",
@@ -113783,6 +114339,127 @@
 				{
 					"Change": 40818,
 					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40840,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40853,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40866,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40868,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40870,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40872,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40906,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40907,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40916,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40917,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"Change": 40937,
+					"Prev": true,
 					"Field": "ReturnType",
 					"Type": "Type",
 					"Index": 0,
@@ -129740,6 +130417,116 @@
 						"Category": "DataType",
 						"Name": "RaycastParams"
 					}
+				},
+				{
+					"Change": 40927,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40927,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40960,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40960,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40961,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40961,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40962,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40962,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40963,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
+				},
+				{
+					"Change": 40963,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "DataType",
+						"Name": "RaycastParams"
+					}
 				}
 			],
 			"RaycastResult": [
@@ -135298,6 +136085,28 @@
 						"Category": "Group",
 						"Name": "Tuple"
 					}
+				},
+				{
+					"Change": 40916,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				},
+				{
+					"Change": 40917,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Tuple"
+					}
 				}
 			],
 			"TweenInfo": [
@@ -140197,6 +141006,72 @@
 						"Category": "Group",
 						"Name": "Variant"
 					}
+				},
+				{
+					"Change": 40839,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Change": 40841,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Change": 40912,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Change": 40913,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Change": 40919,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
+				},
+				{
+					"Change": 40920,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Group",
+						"Name": "Variant"
+					}
 				}
 			],
 			"Vector2": [
@@ -143903,6 +144778,138 @@
 					"Field": "ValueType",
 					"Type": "Type",
 					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40848,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40848,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40849,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40849,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40850,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40850,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40850,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40850,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40851,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40851,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40851,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector2"
+					}
+				},
+				{
+					"Change": 40851,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
 					"Value": {
 						"Category": "DataType",
 						"Name": "Vector2"
@@ -151359,6 +152366,239 @@
 					"Field": "ValueType",
 					"Type": "Type",
 					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40847,
+					"Prev": true,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40927,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40927,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40927,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40927,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40960,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40960,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40960,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40960,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40961,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40961,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40961,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40961,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40962,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40962,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 4,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3",
+						"Optional": true
+					}
+				},
+				{
+					"Change": 40962,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40962,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 4,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3",
+						"Optional": true
+					}
+				},
+				{
+					"Change": 40963,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40963,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40963,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "Vector3"
+					}
+				},
+				{
+					"Change": 40963,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 2,
 					"Value": {
 						"Category": "DataType",
 						"Name": "Vector3"
@@ -186282,6 +187522,61 @@
 						"Category": "Primitive",
 						"Name": "bool"
 					}
+				},
+				{
+					"Change": 40832,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 40837,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 40842,
+					"Prev": true,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 40857,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				},
+				{
+					"Change": 40862,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "bool"
+					}
 				}
 			],
 			"buffer": [
@@ -186573,6 +187868,39 @@
 				},
 				{
 					"Change": 40786,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Change": 40853,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Change": 40919,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "DataType",
+						"Name": "buffer"
+					}
+				},
+				{
+					"Change": 40920,
 					"Prev": false,
 					"Field": "ReturnType",
 					"Type": "Type",
@@ -205639,6 +206967,127 @@
 					"Field": "ValueType",
 					"Type": "Type",
 					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40848,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40848,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40850,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40850,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40851,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40851,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 3,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40856,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40859,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40865,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40963,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "float"
+					}
+				},
+				{
+					"Change": 40963,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
 					"Value": {
 						"Category": "Primitive",
 						"Name": "float"
@@ -229781,6 +231230,50 @@
 						"Category": "Primitive",
 						"Name": "int"
 					}
+				},
+				{
+					"Change": 40848,
+					"Prev": true,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 40848,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 40858,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
+				},
+				{
+					"Change": 40860,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int"
+					}
 				}
 			],
 			"int64": [
@@ -244288,6 +245781,28 @@
 					"Field": "Parameters",
 					"Type": "Parameter",
 					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 40861,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "int64"
+					}
+				},
+				{
+					"Change": 40864,
+					"Prev": false,
+					"Field": "ValueType",
+					"Type": "Type",
+					"Index": -1,
 					"Value": {
 						"Category": "Primitive",
 						"Name": "int64"
@@ -263041,6 +264556,94 @@
 				},
 				{
 					"Change": 40811,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 40841,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 40870,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 40871,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 40872,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 40873,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 40902,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 40904,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "null"
+					}
+				},
+				{
+					"Change": 40913,
 					"Prev": false,
 					"Field": "ReturnType",
 					"Type": "Type",
@@ -312110,6 +313713,127 @@
 				},
 				{
 					"Change": 40814,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40832,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40839,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40841,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40845,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40846,
+					"Prev": false,
+					"Field": "ReturnType",
+					"Type": "Type",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40902,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40903,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40903,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 1,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40904,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40912,
+					"Prev": false,
+					"Field": "Parameters",
+					"Type": "Parameter",
+					"Index": 0,
+					"Value": {
+						"Category": "Primitive",
+						"Name": "string"
+					}
+				},
+				{
+					"Change": 40913,
 					"Prev": false,
 					"Field": "Parameters",
 					"Type": "Parameter",
@@ -1316490,6 +1318214,4241 @@
 					"Value": 1
 				}
 			}
+		},
+		{
+			"Update": 1603,
+			"Index": 0,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AchievementService",
+				"Secondary": "IsAchievementAvailable",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "achievementName",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "bool"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 1,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AnimatedImageService",
+				"Secondary": "UserCreatedClips",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "ANIM\u0001",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 2,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "AnimatedImageService",
+				"Secondary": "UserCreatedTracks"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Data",
+				"Default": "ANIM\u0001",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "RobloxScriptSecurity",
+				"Tags": [
+					"Hidden",
+					"NotScriptable"
+				],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "DataType",
+					"Name": "BinaryString"
+				},
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 3,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AnimationNodeDefinition",
+				"Secondary": "NodeId",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 4,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AnimationNodeDefinition",
+				"Secondary": "NodeId",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 5,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AnimationPlayer",
+				"Secondary": "Parameters",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Playback",
+					"Default": "false",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [
+						"NotReplicated",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 6,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "AnimationPlayer",
+				"Secondary": "ParametersSerialize",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [
+						"Hidden",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "DataType",
+						"Name": "BinaryString"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 7,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationPlayer",
+				"Secondary": "GetParameter",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "name",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Variant"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 8,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationPlayer",
+				"Secondary": "GetParameterDefaults",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 9,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AnimationPlayer",
+				"Secondary": "SetParameter",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "name",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Variant"
+							},
+							"Name": "value",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 10,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "AnimationRigData",
+				"Secondary": "LoadFromHumanoid"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						},
+						"Name": "humanoid",
+						"Optional": false,
+						"Default": ""
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Primitive",
+						"Name": "bool"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 11,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AnimationValueNodeDefinition",
+				"Secondary": "NodeId",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 12,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "AnimationValueNodeDefinition",
+				"Secondary": "NodeId",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 13,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AssetImportService",
+				"Secondary": "PickAnimatedImageFileWithPromptAsync",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 14,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "AssetImportService",
+				"Secondary": "PickTextDocumentFileWithPromptAsync",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "string"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 15,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "BasePart",
+				"Secondary": "siz"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": false,
+				"Category": "Part",
+				"Default": "__api_dump_class_not_creatable__",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "None",
+				"Tags": [
+					"Hidden",
+					"WriteOnly",
+					"NotReplicated",
+					"NotScriptable"
+				],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "DataType",
+					"Name": "Vector3"
+				},
+				"WriteSecurity": "None"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 16,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "EditableImage",
+				"Secondary": "DrawCircle",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "center",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "int"
+							},
+							"Name": "radius",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Color3"
+							},
+							"Name": "color",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "float"
+							},
+							"Name": "transparency",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageCombineType"
+							},
+							"Name": "combineType",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "AntiAliasing"
+							},
+							"Name": "antiAliasing",
+							"Optional": true,
+							"Default": "Enabled"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageAlphaType"
+							},
+							"Name": "alphaBlendType",
+							"Optional": true,
+							"Default": "Default"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "center",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "int"
+						},
+						"Name": "radius",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Color3"
+						},
+						"Name": "color",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "float"
+						},
+						"Name": "transparency",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageCombineType"
+						},
+						"Name": "combineType",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "AntiAliasing"
+						},
+						"Name": "antiAliasing",
+						"Optional": true,
+						"Default": "Enabled"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 17,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "EditableImage",
+				"Secondary": "DrawImage",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "position",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "EditableImage"
+							},
+							"Name": "image",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageCombineType"
+							},
+							"Name": "combineType",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageAlphaType"
+							},
+							"Name": "alphaBlendType",
+							"Optional": true,
+							"Default": "Default"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "position",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "EditableImage"
+						},
+						"Name": "image",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageCombineType"
+						},
+						"Name": "combineType",
+						"Optional": false,
+						"Default": ""
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 18,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "EditableImage",
+				"Secondary": "DrawLine",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "p1",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "p2",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Color3"
+							},
+							"Name": "color",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "float"
+							},
+							"Name": "transparency",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageCombineType"
+							},
+							"Name": "combineType",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "AntiAliasing"
+							},
+							"Name": "antiAliasing",
+							"Optional": true,
+							"Default": "Enabled"
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageAlphaType"
+							},
+							"Name": "alphaBlendType",
+							"Optional": true,
+							"Default": "Default"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "p1",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "p2",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Color3"
+						},
+						"Name": "color",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "float"
+						},
+						"Name": "transparency",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageCombineType"
+						},
+						"Name": "combineType",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "AntiAliasing"
+						},
+						"Name": "antiAliasing",
+						"Optional": true,
+						"Default": "Enabled"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 19,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "EditableImage",
+				"Secondary": "DrawRectangle",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "position",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector2"
+							},
+							"Name": "size",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Color3"
+							},
+							"Name": "color",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "float"
+							},
+							"Name": "transparency",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageCombineType"
+							},
+							"Name": "combineType",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "ImageAlphaType"
+							},
+							"Name": "alphaBlendType",
+							"Optional": true,
+							"Default": "Default"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "position",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector2"
+						},
+						"Name": "size",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Color3"
+						},
+						"Name": "color",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "float"
+						},
+						"Name": "transparency",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Enum",
+							"Name": "ImageCombineType"
+						},
+						"Name": "combineType",
+						"Optional": false,
+						"Default": ""
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 20,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureMatchingService",
+				"Secondary": "CreateSearchParams",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Class",
+							"Name": "FeatureSearchParams"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 21,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureMatchingSession",
+				"Secondary": "Search",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "buffer"
+							},
+							"Name": "query",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "FeatureSearchParams"
+							},
+							"Name": "params",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 22,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureMatchingSession",
+				"Secondary": "SearchBatch",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "queries",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "FeatureSearchParams"
+							},
+							"Name": "sharedParams",
+							"Optional": true,
+							"Default": "nil"
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "perQueryParams",
+							"Optional": true,
+							"Default": "{}"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 23,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "FeatureSearchParams",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Object",
+					"Tags": [
+						"NotCreatable",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 24,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "AnchorCostScale",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 25,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "AnchorIgnoresTagFilters",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 26,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "AnchorRow",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "int"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 27,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "MaxDistance",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 28,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "MaxResults",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "int"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 29,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "NormalizationKey",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "int64"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 30,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "ReturnChannelCosts",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "bool"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 31,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "SelectionMode",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "FeatureSelectionMode"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 32,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "SelectionSeed",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "int64"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 33,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "SelectionTemperature",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_failed_to_create_class__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Primitive",
+						"Name": "float"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 34,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "GetChannelWeights",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 35,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "GetCostBiases",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 36,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "GetFilters",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 37,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "GetReturnedFields",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 38,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "SetChannelWeights",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "weights",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 39,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "SetCostBiases",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "costBiases",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 40,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "SetFilters",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "filters",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 41,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FeatureSearchParams",
+				"Secondary": "SetReturnedFields",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "fieldNames",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 42,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "CallId",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 43,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "CallId",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 44,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "ConversationId",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 45,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "ConversationId",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 46,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "EndReason",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 47,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "EndReason",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 48,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "InitiatorUserId",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 49,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "InitiatorUserId",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 50,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "IsDeafened",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 51,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "IsDeafened",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 52,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "Phase",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 53,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "Phase",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 54,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "Volume",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 55,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingInstance",
+				"Secondary": "Volume",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 56,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "Error",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 57,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "Error",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 58,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "IsLocalMuted",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 59,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "IsLocalMuted",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 60,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "IsSpeaking",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 61,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "IsSpeaking",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 62,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "LeaveReason",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 63,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "LeaveReason",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 64,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "Status",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 65,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "Status",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 66,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "UserId",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 67,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "UserId",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 68,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "Volume",
+				"Fields": {
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 69,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "FriendsCallingParticipant",
+				"Secondary": "Volume",
+				"Fields": {
+					"ReadSecurity": "RobloxScriptSecurity"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 70,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FriendsCallingService",
+				"Secondary": "AnswerCall",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "callId",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 71,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "FriendsCallingService",
+				"Secondary": "EndCall",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "callId",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "reason",
+							"Optional": false,
+							"Default": ""
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": []
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 72,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "FriendsCallingService",
+				"Secondary": "ReceiveCall",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "pushPayloadJson",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 73,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "GamepadService",
+				"Secondary": "EnableGamepadCursor",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "GuiObject"
+							},
+							"Name": "guiObject",
+							"Optional": true,
+							"Default": "nil"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "Instance"
+						},
+						"Name": "guiObject",
+						"Optional": false,
+						"Default": ""
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 74,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "GeometryService",
+				"Secondary": "SplitApartAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Array"
+							},
+							"Name": "parts",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "options",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 75,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "GuiService",
+				"Secondary": "GetUIScaleOptions",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Dictionary"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 76,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "HapticEffect",
+				"Secondary": "GetWaveformKeys",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 77,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "LayerCollector",
+				"Secondary": "InputSinkEnabled",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Data",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 78,
+			"Action": {
+				"Type": 1,
+				"Element": "Class",
+				"Primary": "PlaceSettings",
+				"Fields": {
+					"MemoryCategory": "Instances",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Superclass": "Instance",
+					"Tags": [
+						"NotCreatable",
+						"Service",
+						"NotReplicated"
+					]
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 79,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "PlaceSettings",
+				"Secondary": "GetActiveRollouts",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Array"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 80,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "PlaceSettings",
+				"Secondary": "GetRolloutState",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "rolloutName",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Variant"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 81,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "PlaceSettings",
+				"Secondary": "SetRolloutState",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "string"
+							},
+							"Name": "rolloutName",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Variant"
+							},
+							"Name": "state",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Primitive",
+							"Name": "null"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 82,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Player",
+				"Secondary": "DeviceTrustLevel",
+				"Fields": {
+					"Tags": [
+						"ReadOnly",
+						"NotReplicated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Hidden",
+					"ReadOnly",
+					"NotReplicated"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 83,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "ScriptEditorService",
+				"Secondary": "GetActiveScriptDocument",
+				"Fields": {
+					"Parameters": [],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Class",
+							"Name": "ScriptDocument"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 84,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "ScriptEditorService",
+				"Secondary": "OpenTextDocumentAsync",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "TextDocument"
+							},
+							"Name": "textDocument",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Dictionary"
+							},
+							"Name": "options",
+							"Optional": true,
+							"Default": "nil"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Tuple"
+						}
+					],
+					"Security": "RobloxScriptSecurity",
+					"Tags": [
+						"Yields"
+					],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 85,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "ScriptEditorService",
+				"Secondary": "OpenTextDocumentDocumentAsync"
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "TextDocument"
+						},
+						"Name": "textDocument",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Group",
+							"Name": "Dictionary"
+						},
+						"Name": "options",
+						"Optional": true,
+						"Default": "nil"
+					}
+				],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Group",
+						"Name": "Tuple"
+					}
+				],
+				"Security": "RobloxScriptSecurity",
+				"Tags": [
+					"Yields"
+				],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 86,
+			"Action": {
+				"Type": 1,
+				"Element": "Event",
+				"Primary": "ScriptEditorService",
+				"Secondary": "ActiveScriptDocumentChanged",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "ScriptDocument"
+							},
+							"Name": "newDocument",
+							"Optional": false,
+							"Default": ""
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Security": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 87,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "SerializationService",
+				"Secondary": "DeserializeValue",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "buffer"
+							},
+							"Name": "buffer",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "SerializationFormat"
+							},
+							"Name": "format",
+							"Optional": true,
+							"Default": "Binary"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "Group",
+							"Name": "Variant"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 88,
+			"Action": {
+				"Type": 1,
+				"Element": "Function",
+				"Primary": "SerializationService",
+				"Secondary": "SerializeValue",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Group",
+								"Name": "Variant"
+							},
+							"Name": "value",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Enum",
+								"Name": "SerializationFormat"
+							},
+							"Name": "format",
+							"Optional": true,
+							"Default": "Binary"
+						}
+					],
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReturnType": [
+						{
+							"Category": "DataType",
+							"Name": "buffer"
+						}
+					],
+					"Security": "None",
+					"Tags": [],
+					"ThreadSafety": "Unsafe"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 89,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "SoundService",
+				"Secondary": "DefaultListenerLocation",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 90,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "SoundService",
+				"Secondary": "DefaultListenerLocation",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 91,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "SoundService",
+				"Secondary": "GetInputDevice",
+				"Fields": {
+					"Security": "None"
+				}
+			},
+			"Prev": {
+				"Security": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 92,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "StateMachineTransitionDefinition",
+				"Secondary": "TransitionId",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 93,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "StateMachineTransitionDefinition",
+				"Secondary": "TransitionId",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 94,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Studio",
+				"Secondary": "Theme",
+				"Fields": {
+					"ValueType": {
+						"Category": "Class",
+						"Name": "StudioTheme"
+					}
+				}
+			},
+			"Prev": {
+				"ValueType": {
+					"Category": "Class",
+					"Name": "Instance"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 95,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "StudioService",
+				"Secondary": "GizmoRaycast",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "origin",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "direction",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "RaycastParams"
+							},
+							"Name": "raycastParams",
+							"Optional": true,
+							"Default": "RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "origin",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "direction",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "RaycastParams"
+						},
+						"Name": "raycastParams",
+						"Optional": true,
+						"Default": "RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 96,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "TeleportOptions",
+				"Secondary": "ReservedServerAccessCode",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "ReservedServerId",
+						"ThreadSafety": "Unknown"
+					}
+				}
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 97,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "TeleportOptions",
+				"Secondary": "ReservedServerAccessCode",
+				"Fields": {
+					"Tags": [
+						"Deprecated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": []
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 98,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "TeleportOptions",
+				"Secondary": "ShouldReserveServer",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "ReservedServerId",
+						"ThreadSafety": "Unknown"
+					}
+				}
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 99,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "TeleportOptions",
+				"Secondary": "ShouldReserveServer",
+				"Fields": {
+					"Tags": [
+						"Deprecated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": []
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 100,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "TeleportService",
+				"Secondary": "ReserveServer",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "TeleportAsync",
+						"ThreadSafety": "Unknown"
+					}
+				}
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "ReserveServerAsync",
+					"ThreadSafety": "Unknown"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 101,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "TeleportService",
+				"Secondary": "ReserveServerAsync",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "TeleportAsync",
+						"ThreadSafety": "Unknown"
+					}
+				}
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 102,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "TeleportService",
+				"Secondary": "ReserveServerAsync",
+				"Fields": {
+					"Tags": [
+						"Yields",
+						"Deprecated"
+					]
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"Yields"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 103,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Terrain",
+				"Secondary": "Decoration",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotScriptable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 104,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Terrain",
+				"Secondary": "GrassLength",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotScriptable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 105,
+			"Action": {
+				"Type": -1,
+				"Element": "Function",
+				"Primary": "TestFailure",
+				"Secondary": "GetContext"
+			},
+			"Prev": {
+				"Parameters": [],
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReturnType": [
+					{
+						"Category": "Group",
+						"Name": "Dictionary"
+					}
+				],
+				"Security": "None",
+				"Tags": [],
+				"ThreadSafety": "Unsafe"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 106,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "TextChatService",
+				"Secondary": "ChatTranslationEnabled",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 107,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "TextChatService",
+				"Secondary": "CreateDefaultCommands",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 108,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "TextChatService",
+				"Secondary": "CreateDefaultTextChannels",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "PluginSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 109,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "UIGradient",
+				"Secondary": "Scale",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotBrowsable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 110,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "UIGradient",
+				"Secondary": "TileMode",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotBrowsable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 111,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "UIGradient",
+				"Secondary": "Type",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotBrowsable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 112,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "AuthorityMode",
+				"Fields": {
+					"WriteSecurity": "None"
+				}
+			},
+			"Prev": {
+				"WriteSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 113,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "AuthorityMode",
+				"Fields": {
+					"ReadSecurity": "None"
+				}
+			},
+			"Prev": {
+				"ReadSecurity": "RobloxScriptSecurity"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 114,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "InputSinkEnabled",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxScriptSecurity",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					},
+					"WriteSecurity": "RobloxScriptSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 115,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "NextGenerationPhysicsSolver",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "Behavior",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 116,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "NextGenerationReplicationStorage",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotReplicated",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 117,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "ParticlesUseDynamicWind",
+				"Fields": {
+					"CanLoad": true,
+					"CanSave": true,
+					"Category": "AirProperties",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "None",
+					"Tags": [
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					},
+					"WriteSecurity": "None"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 118,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "PlayerScriptsUseInputActionSystemStorage",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotReplicated",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 119,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "PredictiveStreamingMode",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotScriptable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 120,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "PrimalPhysicsSolver"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Behavior",
+				"Default": "__api_dump_class_not_creatable__",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "None",
+				"Tags": [
+					"NotScriptable"
+				],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "Enum",
+					"Name": "PrimalPhysicsSolver"
+				},
+				"WriteSecurity": "None"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 121,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "SignalBehaviorStorage",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotReplicated",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "SignalBehavior"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 122,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "StreamOutBehavior",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotScriptable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 123,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "StreamingIntegrityMode",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotScriptable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 124,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "StreamingMinRadius",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotScriptable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 125,
+			"Action": {
+				"Type": 0,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "StreamingTargetRadius",
+				"Fields": {
+					"Tags": []
+				}
+			},
+			"Prev": {
+				"Tags": [
+					"NotScriptable"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 126,
+			"Action": {
+				"Type": 1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "UseFixedSimulationStorage",
+				"Fields": {
+					"CanLoad": false,
+					"CanSave": false,
+					"Category": "Data",
+					"Default": "__api_dump_class_not_creatable__",
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"ReadSecurity": "RobloxSecurity",
+					"Tags": [
+						"Hidden",
+						"NotReplicated",
+						"NotScriptable"
+					],
+					"ThreadSafety": "ReadSafe",
+					"ValueType": {
+						"Category": "Enum",
+						"Name": "RolloutState"
+					},
+					"WriteSecurity": "RobloxSecurity"
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 127,
+			"Action": {
+				"Type": -1,
+				"Element": "Property",
+				"Primary": "Workspace",
+				"Secondary": "UseInputSink"
+			},
+			"Prev": {
+				"CanLoad": true,
+				"CanSave": true,
+				"Category": "Behavior",
+				"Default": "__api_dump_class_not_creatable__",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"ReadSecurity": "None",
+				"Tags": [
+					"NotScriptable"
+				],
+				"ThreadSafety": "ReadSafe",
+				"ValueType": {
+					"Category": "Enum",
+					"Name": "RolloutState"
+				},
+				"WriteSecurity": "None"
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 128,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "WorldRoot",
+				"Secondary": "Blockcast",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "CFrame"
+							},
+							"Name": "cframe",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "size",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "direction",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "RaycastParams"
+							},
+							"Name": "params",
+							"Optional": true,
+							"Default": "RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "CFrame"
+						},
+						"Name": "cframe",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "size",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "direction",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "RaycastParams"
+						},
+						"Name": "params",
+						"Optional": true,
+						"Default": "RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 129,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "WorldRoot",
+				"Secondary": "Raycast",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "origin",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "direction",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "RaycastParams"
+							},
+							"Name": "raycastParams",
+							"Optional": true,
+							"Default": "RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "origin",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "direction",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "RaycastParams"
+						},
+						"Name": "raycastParams",
+						"Optional": true,
+						"Default": "RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 130,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "WorldRoot",
+				"Secondary": "Shapecast",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "Class",
+								"Name": "BasePart"
+							},
+							"Name": "part",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "direction",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "RaycastParams"
+							},
+							"Name": "params",
+							"Optional": true,
+							"Default": "RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "CoordinateFrame",
+								"Optional": true
+							},
+							"Name": "cframeOverride",
+							"Optional": true,
+							"Default": "nil"
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3",
+								"Optional": true
+							},
+							"Name": "sizeOverride",
+							"Optional": true,
+							"Default": "nil"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "Class",
+							"Name": "BasePart"
+						},
+						"Name": "part",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "direction",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "RaycastParams"
+						},
+						"Name": "params",
+						"Optional": true,
+						"Default": "RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "CoordinateFrame",
+							"Optional": true
+						},
+						"Name": "cframeOverride",
+						"Optional": true,
+						"Default": "nil"
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3",
+							"Optional": true
+						},
+						"Name": "sizeOverride",
+						"Optional": true,
+						"Default": "nil"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 131,
+			"Action": {
+				"Type": 0,
+				"Element": "Function",
+				"Primary": "WorldRoot",
+				"Secondary": "Spherecast",
+				"Fields": {
+					"Parameters": [
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "position",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "Primitive",
+								"Name": "float"
+							},
+							"Name": "radius",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "Vector3"
+							},
+							"Name": "direction",
+							"Optional": false,
+							"Default": ""
+						},
+						{
+							"Type": {
+								"Category": "DataType",
+								"Name": "RaycastParams"
+							},
+							"Name": "params",
+							"Optional": true,
+							"Default": "RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+						}
+					]
+				}
+			},
+			"Prev": {
+				"Parameters": [
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "position",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "Primitive",
+							"Name": "float"
+						},
+						"Name": "radius",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "Vector3"
+						},
+						"Name": "direction",
+						"Optional": false,
+						"Default": ""
+					},
+					{
+						"Type": {
+							"Category": "DataType",
+							"Name": "RaycastParams"
+						},
+						"Name": "params",
+						"Optional": true,
+						"Default": "RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}"
+					}
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 132,
+			"Action": {
+				"Type": -1,
+				"Element": "Class",
+				"Primary": "WrapDeformMeshProvider"
+			},
+			"Prev": {
+				"MemoryCategory": "Instances",
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Superclass": "Instance",
+				"Tags": [
+					"NotCreatable",
+					"Service",
+					"NotReplicated"
+				]
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 133,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "AnimationValueNodeType",
+				"Secondary": "FeatureMatching",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 134,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "FeatureMatchingSource",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 135,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "FeatureMatchingSource",
+				"Secondary": "Continuity",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 136,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "FeatureMatchingSource",
+				"Secondary": "Ignore",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 137,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "FeatureMatchingSource",
+				"Secondary": "Input",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 138,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "FeatureSelectionMode",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 139,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "FeatureSelectionMode",
+				"Secondary": "Nearest",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 140,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "FeatureSelectionMode",
+				"Secondary": "WeightedRandom",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 141,
+			"Action": {
+				"Type": 0,
+				"Element": "EnumItem",
+				"Primary": "FluidForces",
+				"Secondary": "Experimental",
+				"Fields": {
+					"LegacyNames": [
+						"Enabled"
+					]
+				}
+			},
+			"Prev": {
+				"LegacyNames": null
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 142,
+			"Action": {
+				"Type": -1,
+				"Element": "Enum",
+				"Primary": "PrimalPhysicsSolver"
+			},
+			"Prev": {
+				"PreferredDescriptor": {
+					"Name": "",
+					"ThreadSafety": ""
+				},
+				"Tags": []
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 143,
+			"Action": {
+				"Type": 1,
+				"Element": "Enum",
+				"Primary": "SerializationFormat",
+				"Fields": {
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": []
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 144,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "SerializationFormat",
+				"Secondary": "Binary",
+				"Fields": {
+					"Index": 0,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 0
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 145,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "SerializationFormat",
+				"Secondary": "Json",
+				"Fields": {
+					"Index": 1,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 1
+				}
+			}
+		},
+		{
+			"Update": 1603,
+			"Index": 146,
+			"Action": {
+				"Type": 1,
+				"Element": "EnumItem",
+				"Primary": "SerializationFormat",
+				"Secondary": "Luau",
+				"Fields": {
+					"Index": 2,
+					"LegacyNames": null,
+					"PreferredDescriptor": {
+						"Name": "",
+						"ThreadSafety": ""
+					},
+					"Tags": [],
+					"Value": 2
+				}
+			}
 		}
 	],
 	"Update": [
@@ -1335728,6 +1341687,18 @@
 			},
 			"ChangesStart": 40728,
 			"ChangesCount": 104
+		},
+		{
+			"Date": "2026-11-03T09:30:07-08:00",
+			"GUID": "version-fee454b8e2094ba9",
+			"Version": {
+				"Gen": 0,
+				"Version": 746,
+				"Patch": 0,
+				"Commit": 7461264
+			},
+			"ChangesStart": 40832,
+			"ChangesCount": 147
 		}
 	]
 }
