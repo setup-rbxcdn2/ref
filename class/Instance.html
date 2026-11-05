@@ -2897,7 +2897,9 @@ list.</p></li></ul><div class="_chroma _light"><table class=_lntable><tbody><tr>
 negation of the selectors. Since the expression inside is a list of
 complex selectors, it's possible to filter based on multiple conditions.</p></li><li><p><code>:has(relative-selector-list)</code> — Allows selecting instances based on
 which instances they contain inside. The selector list is evaluated
-relative to each instance.</p></li></ul><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
+relative to each instance.</p></li><li><p><code>:in-radius(studs, complex-selector-list)</code> Selects instances within the
+specified number of studs. The selector list is evaluated against all
+instances matching the query. It's effectively evaluating a join.</p></li></ul><div class="_chroma _light"><table class=_lntable><tbody><tr><td class=_lntd><pre class="_chroma _light"><span class=_lnt> 1
 </span><span class=_lnt> 2
 </span><span class=_lnt> 3
 </span><span class=_lnt> 4
@@ -2915,6 +2917,9 @@ relative to each instance.</p></li></ul><div class="_chroma _light"><table class
 </span><span class=_lnt>16
 </span><span class=_lnt>17
 </span><span class=_lnt>18
+</span><span class=_lnt>19
+</span><span class=_lnt>20
+</span><span class=_lnt>21
 </span></pre></td><td class=_lntd><pre class="_chroma _light"><code><span class=_line><span class=_cl><span class=_kd>local</span> <span class=_n>Workspace</span> <span class=_o>=</span> <span class=_n>game</span><span class=_p>:</span><span class=_n>GetService</span><span class=_p>(</span><span class=_s2>&#34;Workspace&#34;</span><span class=_p>)</span>
 </span></span><span class=_line><span class=_cl>
 </span></span><span class=_line><span class=_cl><span class=_c1>-- Get all descendants which are NOT of class SpotLight</span>
@@ -2933,6 +2938,9 @@ relative to each instance.</p></li></ul><div class="_chroma _light"><table class
 </span></span><span class=_line><span class=_cl>
 </span></span><span class=_line><span class=_cl><span class=_c1>-- Get MeshPart descendants with direct children NOT of SurfaceAppearance or Texture class</span>
 </span></span><span class=_line><span class=_cl><span class=_n>print</span><span class=_p>(</span><span class=_n>Workspace</span><span class=_p>:</span><span class=_n>QueryDescendants</span><span class=_p>(</span><span class=_s2>&#34;MeshPart:has(&gt; :not(SurfaceAppearance, Texture))&#34;</span><span class=_p>))</span>
+</span></span><span class=_line><span class=_cl>
+</span></span><span class=_line><span class=_cl><span class=_c1>-- Get Fireball Models within 10 studs of a HumanoidRootPart (Players or NPC&#39;s)</span>
+</span></span><span class=_line><span class=_cl><span class=_n>print</span><span class=_p>(</span><span class=_n>Workspace</span><span class=_p>:</span><span class=_n>QueryDescendants</span><span class=_p>(</span><span class=_s2>&#34;Model.FireBall:in-radius(10, Model:has(&gt; Part#HumanoidRootPart))&#34;</span><span class=_p>))</span>
 </span></span></code></pre></td></tr></tbody></table></div></div><div class=status-list><div class="status-box low"><span class=header>This function has a custom internal state.</span> It may behave in a non-standard way.</div></div><table class=metadata-pairs><tr class=pair><th class=name>Thread safety</th><td class=value>Unsafe</td></tr></table><details><summary><h4>History <span class=element-count>2</span></h4></summary><ul class="change-list truncated-list"><li class=filter-element data-entity=Function data-field=Parameters><a class="history-tag changed" href=/ref/updates/2025.html#version-63bff05435e54bdb-7 title="Changed on 2025-11-04T10:11:45-08:00
 v0.698.0.6980936
 version-63bff05435e54bdb">698</a>
